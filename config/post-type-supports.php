@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Raw Child child theme.
  *
  * Post type supports.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-sample/
+ * @link    https://my.rawsta.com/themes/raw-child/
  */
 
 return [

@@ -1,16 +1,16 @@
 <?php
 /**
- * Genesis Sample.
+ * Raw Child.
  *
- * This file adds the default theme settings to the Genesis Sample Theme.
+ * This file adds the default theme settings to the Raw Child Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
-add_filter( 'simple_social_default_styles', 'genesis_sample_social_default_styles' );
+add_filter( 'simple_social_default_styles', 'raw_child_social_default_styles' );
 /**
  * Set Simple Social Icon defaults.
  *
@@ -19,7 +19,7 @@ add_filter( 'simple_social_default_styles', 'genesis_sample_social_default_style
  * @param array $defaults Social style defaults.
  * @return array Modified social style defaults.
  */
-function genesis_sample_social_default_styles( $defaults ) {
+function raw_child_social_default_styles( $defaults ) {
 
 	$args = genesis_get_config( 'simple-social-icons-settings' );
 

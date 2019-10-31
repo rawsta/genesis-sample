@@ -1,24 +1,24 @@
 <?php
 /**
- * Genesis Sample.
+ * Raw Child.
  *
- * This file adds the required helper functions used in the Genesis Sample Theme.
+ * This file adds the required helper functions used in the Raw Child Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 /**
  * Calculates if white or gray would contrast more with the provided color.
  *
- * @since 2.2.3
+ * @since 1.0.0
  *
  * @param string $color A color in hex format.
  * @return string The hex code for the most contrasting color: dark grey or white.
  */
-function genesis_sample_color_contrast( $color ) {
+function raw_child_color_contrast( $color ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 	$red      = hexdec( substr( $hexcolor, 0, 2 ) );
@@ -35,13 +35,13 @@ function genesis_sample_color_contrast( $color ) {
  * Generates a lighter or darker color from a starting color.
  * Used to generate complementary hover tints from user-chosen colors.
  *
- * @since 2.2.3
+ * @since 1.0.0
  *
  * @param string $color A color in hex format.
  * @param int    $change The amount to reduce or increase brightness by.
  * @return string Hex code for the adjusted color brightness.
  */
-function genesis_sample_color_brightness( $color, $change ) {
+function raw_child_color_brightness( $color, $change ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 

@@ -2,19 +2,19 @@
 /**
  * Adds front-end inline styles for the custom Gutenberg color palette.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_custom_gutenberg_css' );
+add_action( 'wp_enqueue_scripts', 'raw_child_custom_gutenberg_css' );
 /**
  * Outputs front-end inline styles based on colors declared in config/appearance.php.
  *
- * @since 2.9.0
+ * @since 1.0.0
  */
-function genesis_sample_custom_gutenberg_css() {
+function raw_child_custom_gutenberg_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -43,23 +43,23 @@ function genesis_sample_custom_gutenberg_css() {
 }
 CSS;
 
-	$css .= genesis_sample_inline_font_sizes();
-	$css .= genesis_sample_inline_color_palette();
+	$css .= raw_child_inline_font_sizes();
+	$css .= raw_child_inline_color_palette();
 
 	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg', $css );
 
 }
 
-add_action( 'enqueue_block_editor_assets', 'genesis_sample_custom_gutenberg_admin_css' );
+add_action( 'enqueue_block_editor_assets', 'raw_child_custom_gutenberg_admin_css' );
 /**
  * Outputs back-end inline styles based on colors declared in config/appearance.php.
  *
  * Note this will appear before the style-editor.css injected by JavaScript,
  * so overrides will need to have higher specificity.
  *
- * @since 2.9.0
+ * @since 1.0.0
  */
-function genesis_sample_custom_gutenberg_admin_css() {
+function raw_child_custom_gutenberg_admin_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -92,11 +92,11 @@ CSS;
 /**
  * Generate CSS for editor font sizes from the provided theme support.
  *
- * @since 2.9.0
+ * @since 1.0.0
  *
  * @return string The CSS for editor font sizes if theme support was declared.
  */
-function genesis_sample_inline_font_sizes() {
+function raw_child_inline_font_sizes() {
 
 	$css               = '';
 	$editor_font_sizes = get_theme_support( 'editor-font-sizes' );
@@ -120,11 +120,11 @@ CSS;
 /**
  * Generate CSS for editor colors based on theme color palette support.
  *
- * @since 2.9.0
+ * @since 1.0.0
  *
  * @return string The editor colors CSS if `editor-color-palette` theme support was declared.
  */
-function genesis_sample_inline_color_palette() {
+function raw_child_inline_color_palette() {
 
 	$css                  = '';
 	$appearance           = genesis_get_config( 'appearance' );

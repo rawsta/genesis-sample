@@ -1,24 +1,24 @@
 <?php
 /**
- * StudioPress WPForms helper functions.
+ * rawsta WPForms helper functions.
  *
  * Assists with the creation of a WPForms form, and the replacement of contact
  * page content with a working contact form block during one-click theme setup.
  *
- * @package StudioPress
- * @author  StudioPress
+ * @package rawsta
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 /**
- * Creates a WPForms form if one added by a StudioPress theme does not exist.
+ * Creates a WPForms form if one added by a rawsta theme does not exist.
  *
- * @since 2.10.0
+ * @since 1.0.0
  *
  * @return int|null ID of form if one exists or gets created. Null if form creation fails or WPForms is inactive.
  */
-function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopress prefix for functions shared between themes.
+function rawsta_maybe_create_wpforms_form() { // phpcs:ignore -- rawsta prefix for functions shared between themes.
 
 	if ( ! function_exists( 'wpforms' ) ) {
 		return;
@@ -52,7 +52,7 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 
 	// Creates a form using the WPForms 'contact' template.
 	$new_form_id = wpforms()->form->add(
-		esc_html__( 'Simple Contact Form', 'genesis-sample' ),
+		esc_html__( 'Simple Contact Form', 'raw-child' ),
 		[],
 		[
 			'template' => 'contact',
@@ -70,14 +70,14 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 /**
  * Replace contact page placeholder content with a block displaying the form.
  *
- * @since 2.10.0
+ * @since 1.0.0
  *
  * @param array $content The content config.
  * @param array $imported_posts Imported posts with content short name as keys and IDs as values.
  */
-function studiopress_insert_contact_form( $content, $imported_posts ) { // phpcs:ignore -- studiopress prefix for functions shared between themes.
+function rawsta_insert_contact_form( $content, $imported_posts ) { // phpcs:ignore -- rawsta prefix for functions shared between themes.
 
-	$form_id = studiopress_maybe_create_wpforms_form();
+	$form_id = rawsta_maybe_create_wpforms_form();
 
 	if ( $form_id && array_key_exists( 'contact', $imported_posts ) ) {
 		$contact_page = [

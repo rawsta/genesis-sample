@@ -1,15 +1,15 @@
 <?php
 /**
- * Genesis Sample.
+ * Raw Child.
  *
  * Block example page content optionally installed after theme activation.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 return <<<CONTENT

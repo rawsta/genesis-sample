@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample theme settings.
+ * Raw Child theme settings.
  *
  * Genesis 2.9+ updates these settings when themes are activated.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 return [

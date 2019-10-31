@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Raw Child child theme.
  *
  * Theme supports.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-sample/
+ * @link    https://my.rawsta.com/themes/raw-child/
  */
 
 return [
@@ -33,7 +33,7 @@ return [
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
-		'primary'   => __( 'Header Menu', 'genesis-sample' ),
-		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
+		'primary'   => __( 'Header Menu', 'raw-child' ),
+		'secondary' => __( 'Footer Menu', 'raw-child' ),
 	],
 ];

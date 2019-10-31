@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Raw Child.
  *
- * This file adds the required WooCommerce setup functions to the Genesis Sample Theme.
+ * This file adds the required WooCommerce setup functions to the Raw Child Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 // Adds product gallery support.
@@ -19,15 +19,15 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 }
 
-add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocommerce_breakpoint' );
+add_filter( 'woocommerce_style_smallscreen_breakpoint', 'raw_child_woocommerce_breakpoint' );
 /**
  * Modifies the WooCommerce breakpoints.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @return string Pixel width of the theme's breakpoint.
  */
-function genesis_sample_woocommerce_breakpoint() {
+function raw_child_woocommerce_breakpoint() {
 
 	$current = genesis_site_layout( false );
 	$layouts = [
@@ -45,45 +45,45 @@ function genesis_sample_woocommerce_breakpoint() {
 
 }
 
-add_filter( 'genesiswooc_products_per_page', 'genesis_sample_default_products_per_page' );
+add_filter( 'genesiswooc_products_per_page', 'raw_child_default_products_per_page' );
 /**
  * Sets the default products per page.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @return int Number of products to show per page.
  */
-function genesis_sample_default_products_per_page() {
+function raw_child_default_products_per_page() {
 
 	return 8;
 
 }
 
-add_filter( 'woocommerce_pagination_args', 'genesis_sample_woocommerce_pagination' );
+add_filter( 'woocommerce_pagination_args', 'raw_child_woocommerce_pagination' );
 /**
  * Updates the next and previous arrows to the default Genesis style.
  *
  * @param array $args The previous and next text arguments.
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @return array New next and previous text arguments.
  */
-function genesis_sample_woocommerce_pagination( $args ) {
+function raw_child_woocommerce_pagination( $args ) {
 
-	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-sample' ) );
-	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-sample' ) );
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'raw-child' ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'raw-child' ) );
 
 	return $args;
 
 }
 
-add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions_after_theme_setup', 1 );
+add_action( 'after_switch_theme', 'raw_child_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
  * Defines WooCommerce image sizes on theme activation.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
-function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
+function raw_child_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
@@ -92,35 +92,35 @@ function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 		return;
 	}
 
-	genesis_sample_update_woocommerce_image_dimensions();
+	raw_child_update_woocommerce_image_dimensions();
 
 }
 
-add_action( 'activated_plugin', 'genesis_sample_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
+add_action( 'activated_plugin', 'raw_child_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
 /**
  * Defines the WooCommerce image sizes on WooCommerce activation.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @param string $plugin The path of the plugin being activated.
  */
-function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
+function raw_child_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
 	// Checks to see if WooCommerce is being activated.
 	if ( 'woocommerce/woocommerce.php' !== $plugin ) {
 		return;
 	}
 
-	genesis_sample_update_woocommerce_image_dimensions();
+	raw_child_update_woocommerce_image_dimensions();
 
 }
 
 /**
  * Updates WooCommerce image dimensions.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
-function genesis_sample_update_woocommerce_image_dimensions() {
+function raw_child_update_woocommerce_image_dimensions() {
 
 	// Updates image size options.
 	update_option( 'woocommerce_single_image_width', 655 );    // Single product image.
@@ -131,16 +131,16 @@ function genesis_sample_update_woocommerce_image_dimensions() {
 
 }
 
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_sample_gallery_image_thumbnail' );
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'raw_child_gallery_image_thumbnail' );
 /**
  * Filters the WooCommerce gallery image dimensions.
  *
- * @since 2.6.0
+ * @since 1.0.0
  *
  * @param array $size The gallery image size and crop arguments.
  * @return array The modified gallery image size and crop arguments.
  */
-function genesis_sample_gallery_image_thumbnail( $size ) {
+function raw_child_gallery_image_thumbnail( $size ) {
 
 	$size = [
 		'width'  => 180,

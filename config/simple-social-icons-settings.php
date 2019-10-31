@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample Simple Social Icons default settings.
+ * Raw Child Simple Social Icons default settings.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 return [

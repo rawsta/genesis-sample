@@ -1,13 +1,13 @@
 {
-	"name": "studiopress/genesis-sample",
+	"name": "rawsta/raw-child",
 	"type": "wordpress-theme",
-	"description": "Genesis Sample child theme for the Genesis Framework",
-	"homepage": "https://github.com/studiopress/genesis-sample",
+	"description": "Raw Child child theme for the Genesis Framework",
+	"homepage": "https://github.com/rawsta/raw-child",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
-			"name": "StudioPress",
-			"email": "support@studiopress.com"
+			"name": "rawsta",
+			"email": "support@rawsta.com"
 		}
 	],
 	"require": {
@@ -30,7 +30,7 @@
 		"phpcbf": "phpcbf"
 	},
 	"support": {
-		"issues": "https://github.com/studiopress/genesis-sample/issues",
-		"source": "https://github.com/studiopress/genesis-sample"
+		"issues": "https://github.com/rawsta/raw-child/issues",
+		"source": "https://github.com/rawsta/raw-child"
 	}
 }

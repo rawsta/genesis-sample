@@ -1,37 +1,37 @@
 <?php
 /**
- * Genesis Sample.
+ * Raw Child.
  *
  * Onboarding config shared between Starter Packs.
  *
  * Genesis Starter Packs give you a choice of content variation when activating
  * the theme. The content below is common to all packs for this theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Raw Child
+ * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.rawsta.de/
  */
 
 return [
 	'plugins'          => [
 		[
-			'name'       => __( 'Atomic Blocks', 'genesis-sample' ),
+			'name'       => __( 'Atomic Blocks', 'raw-child' ),
 			'slug'       => 'atomic-blocks/atomicblocks.php',
 			'public_url' => 'https://atomicblocks.com/',
 		],
 		[
-			'name'       => __( 'Simple Social Icons', 'genesis-sample' ),
+			'name'       => __( 'Simple Social Icons', 'raw-child' ),
 			'slug'       => 'simple-social-icons/simple-social-icons.php',
 			'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
 		],
 		[
-			'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-sample' ),
+			'name'       => __( 'Genesis eNews Extended (Third Party)', 'raw-child' ),
 			'slug'       => 'genesis-enews-extended/plugin.php',
 			'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
 		],
 		[
-			'name'       => __( 'WPForms Lite (Third Party)', 'genesis-sample' ),
+			'name'       => __( 'WPForms Lite (Third Party)', 'raw-child' ),
 			'slug'       => 'wpforms-lite/wpforms.php',
 			'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
 		],
