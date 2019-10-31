@@ -1,7 +1,11 @@
 # Raw Child Theme
 
 GitHub project link: https://github.com/rawsta/raw-child/.
+forked from https://github.com/studiopress/genesis-sample
 
+This is mainly my own Starter-theme for Genesis-based Websites but everyone is welcome to use it.
+
+Feedback always appreciated.
 
 ## Installation Instructions
 
@@ -10,9 +14,6 @@ GitHub project link: https://github.com/rawsta/raw-child/.
 3. Activate the Raw Child theme.
 4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
 
-## Theme Support
-
-Please visit https://my.rawsta.com/help/ for theme support.
 
 ## For Developers
 
