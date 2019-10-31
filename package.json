@@ -45,7 +45,7 @@
 	"theme": {
 		"name": "Raw Child",
 		"uri": "https://demo.rawsta.com/raw-child/",
-		"description": "The sample child theme for the Genesis Framework.",
+		"description": "This is the raw theme created for the Genesis Framework.",
 		"author": "Rawsta",
 		"authoruri": "https://www.rawsta.de/",
 		"version": "1.0.0",
@@ -53,6 +53,5 @@
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
 		"textdomain": "raw-child"
-	},
-	"dependencies": {}
+	}
 }
