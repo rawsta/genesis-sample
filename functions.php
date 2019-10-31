@@ -46,6 +46,15 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Adds the Genesis Connect WooCommerce notice.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
+// Let's get my stuff
+//---------------->
+// Removes unused Functions.
+require_once get_stylesheet_directory() . '/inc/wp-clean.php';
+
+// Let's add some branding.
+require_once get_stylesheet_directory() . '/inc/branding.php';
+
+
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
 /**
  * Adds Gutenberg opt-in features and styling.
