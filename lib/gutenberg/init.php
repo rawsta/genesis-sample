@@ -102,12 +102,17 @@ add_theme_support(
 	'editor-font-sizes',
 	$raw_child_appearance['editor-font-sizes']
 );
+// Disable Custom FontSize Selection.
+// * add_theme_support( 'disable-custom-font-sizes' );
 
 // Adds support for editor color palette.
 add_theme_support(
 	'editor-color-palette',
 	$raw_child_appearance['editor-color-palette']
 );
+// Disable Custom Color Selection.
+// * add_theme_support( 'disable-custom-colors' );
+
 
 require_once get_stylesheet_directory() . '/lib/gutenberg/inline-styles.php';
 
