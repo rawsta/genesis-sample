@@ -98,6 +98,15 @@ function raw_child_enqueue_scripts_styles() {
 		);
 	}
 
+	// Add initial Javascript.
+	wp_enqueue_script(
+		genesis_get_theme_handle() . '-js',
+		get_stylesheet_directory_uri() . '/js/sinus.js',
+		array( 'jquery' ),
+		genesis_get_theme_version(),
+		true
+	);
+
 }
 
 add_action( 'after_setup_theme', 'raw_child_theme_support', 9 );
