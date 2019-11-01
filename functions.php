@@ -137,8 +137,32 @@ function raw_child_post_type_support() {
 }
 
 // Adds image sizes.
-add_image_size( 'sidebar-featured', 75, 75, true );
-add_image_size( 'genesis-singular-images', 702, 526, true );
+add_image_size( 'sidebar-featured', 75, 75, true ); // Hard Crop Mode.
+add_image_size( 'raw-squared', 400, 400, [ 'left', 'top' ] ); // Hard Crop center/top Mode.
+add_image_size( 'raw-post-images', 480, 320, true ); // Hard Crop Mode.
+add_image_size( 'raw-homepage-thumb', 600, 300, [ 'left', 'top' ], true ); // Soft Crop Mode.
+add_image_size( 'raw-singlepost', 1920, 9999 ); // Unlimited Height Mode.
+
+add_filter( 'image_size_names_choose', 'raw_child_custom_sizes' );
+/**
+ * Makes new image sizes available in MediaLibrary.
+ *
+ *  @since 3.0
+ *
+ * @param array $sizes Imagesizes.
+ */
+function raw_child_custom_sizes( $sizes ) {
+	return array_merge(
+		$sizes,
+		[
+			'sidebar-featured'        => __( 'Sidebar', 'raw-child'  ),
+			'raw-squared'        => __( 'Squared', 'raw-child'  ),
+			'raw-post-images'    => __( 'Post Image', 'raw-child'  ),
+			'raw-homepage-thumb' => __( 'Homepage Thumb', 'raw-child'  ),
+			'raw-singlepost'     => __( 'Singlepost', 'raw-child'  ),
+		]
+	);
+}
 
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );
