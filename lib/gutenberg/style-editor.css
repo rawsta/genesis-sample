@@ -126,14 +126,6 @@ h6 {
 	color: #f5f5f5;
 }
 
-.editor-post-title__block .editor-post-title__input {
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 1.2;
-	margin: 0 0 20px;
-}
-
 p.has-drop-cap:not(:focus)::first-letter {
 	margin: 0.02em 0.08em 0 -0.08em;
 }
@@ -142,6 +134,32 @@ p.has-larger-font-size.has-drop-cap:not(:focus)::first-letter,
 p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
 	margin-right: 0.01em;
 }
+
+/* Editor Post Title
+---------------------------------------------------------------------------- */
+
+.editor-post-title__block:not(.is-focus-mode):not(.has-fixed-toolbar):not(.is-selected) .editor-post-title__input:hover{
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.editor-post-title__block::after {
+	background: #2f4858;
+	content: "\020";
+	position: relative;
+	display: block;
+	height: 3px;
+	margin: 0 0 0 -0.1rem;
+	width: 3rem;
+	bottom: 1.5em;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	color: #33658a;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Background Color
 ---------------------------------------------------------------------------- */
@@ -276,12 +294,101 @@ p.has-background.light-text a:hover {
 	text-align: center;
 }
 
+/* Paragraph Styles
+---------------------------------------------------------------------------- */
+
+.is-style-white-on-black-text {
+	background: #33658a;
+	color: #fff;
+	font-size: 1.3em;
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+.is-style-notice-warning {
+	background: #fff3cd url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><rect x='0' fill='none' width='20' height='20'/><path d='M10 2c4.42 0 8 3.58 8 8s-3.58 8-8 8-8-3.58-8-8 3.58-8 8-8zm1.13 9.38l.35-6.46H8.52l.35 6.46h2.26zm-.09 3.36c.24-.23.37-.55.37-.96 0-.42-.12-.74-.36-.97s-.59-.35-1.06-.35-.82.12-1.07.35-.37.55-.37.97c0 .41.13.73.38.96.26.23.61.34 1.06.34s.8-.11 1.05-.34z'/></svg>") no-repeat;
+	background-size: 50px;
+	min-height: 60px;
+	background-position: 10px center;
+	border: 1px solid rgb(0,0,0,0.1);
+	border-radius: 4px;
+	padding: 16px 16px 16px 70px;
+}
+
+.is-style-notice-success {
+	background: #d4edda url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><rect x='0' fill='none' width='20' height='20'/><path d='M7 5.2c1.1 0 2 .89 2 2 0 .37-.11.71-.28 1C8.72 8.2 8 8 7 8s-1.72.2-1.72.2c-.17-.29-.28-.63-.28-1 0-1.11.9-2 2-2zm6 0c1.11 0 2 .89 2 2 0 .37-.11.71-.28 1 0 0-.72-.2-1.72-.2s-1.72.2-1.72.2c-.17-.29-.28-.63-.28-1 0-1.11.89-2 2-2zm-3 13.7c3.72 0 7.03-2.36 8.23-5.88l-1.32-.46C15.9 15.52 13.12 17.5 10 17.5s-5.9-1.98-6.91-4.94l-1.32.46c1.2 3.52 4.51 5.88 8.23 5.88z'/></svg>") no-repeat;
+	background-size: 50px;
+	min-height: 60px;
+	background-position: 10px center;
+	border: 1px solid rgb(0,0,0,0.1);
+	border-radius: 4px;
+	padding: 16px 16px 16px 70px;
+}
+
+.is-style-notice-question {
+	background: #e6e0f7 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><rect x='0' fill='none' width='20' height='20'/><path d='M17 10c0-3.87-3.14-7-7-7-3.87 0-7 3.13-7 7s3.13 7 7 7c3.86 0 7-3.13 7-7zm-6.3 1.48H9.14v-.43c0-.38.08-.7.24-.98s.46-.57.88-.89c.41-.29.68-.53.81-.71.14-.18.2-.39.2-.62 0-.25-.09-.44-.28-.58-.19-.13-.45-.19-.79-.19-.58 0-1.25.19-2 .57l-.64-1.28c.87-.49 1.8-.74 2.77-.74.81 0 1.45.2 1.92.58.48.39.71.91.71 1.55 0 .43-.09.8-.29 1.11-.19.32-.57.67-1.11 1.06-.38.28-.61.49-.71.63-.1.15-.15.34-.15.57v.35zm-1.47 2.74c-.18-.17-.27-.42-.27-.73 0-.33.08-.58.26-.75s.43-.25.77-.25c.32 0 .57.09.75.26s.27.42.27.74c0 .3-.09.55-.27.72-.18.18-.43.27-.75.27-.33 0-.58-.09-.76-.26z'/></svg>") no-repeat;
+	background-size: 50px;
+	min-height: 60px;
+	background-position: 10px center;
+	border: 1px solid rgb(0,0,0,0.1);
+	border-radius: 4px;
+	padding: 16px 16px 16px 70px;
+}
+
+
 /* Cover Image
 ---------------------------------------------------------------------------- */
 
 .wp-block-cover .wp-block-cover-text {
 	color: #fff;
 	font-size: 48px;
+}
+
+.wp-block-cover-image .wp-block-cover-image-text,
+.wp-block-cover-image .wp-block-cover-text,
+.wp-block-cover-image h2,
+.wp-block-cover .wp-block-cover-image-text,
+.wp-block-cover .wp-block-cover-text,
+.wp-block-cover h2 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 3.6rem;
+	font-weight: 600;
+	line-height: 1.25;
+	padding: 0;
+	color: #fff;
+}
+
+/* Images
+---------------------------------------------------------------------------- */
+
+.wp-block-image.is-style-shadow {
+	-webkit-filter: drop-shadow(2px 1px 7px rgba(0,0,0,0.9));
+	filter: drop-shadow(1px 3px 8px rgba(0,0,0,0.75));
+	transition: all 400ms ease;
+}
+
+.wp-block-image.is-style-shadow:hover {
+	filter: drop-shadow(0 0 7px rgba(0,0,0,0.9));
+}
+
+.wp-block-image.is-style-filter-sepia {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	transition: all 350ms ease;
+}
+
+.wp-block-image.is-style-filter-sepia:hover {
+	-webkit-filter: sepia(0%);
+	filter: sepia(0%);
+}
+
+.wp-block-image.is-style-filter-grey {
+	filter: grayscale(100%);
+	transition: all 400ms ease;
+}
+
+.wp-block-image.is-style-filter-grey:hover {
+	filter: grayscale(0%);
 }
 
 /* Figcaption
@@ -440,4 +547,118 @@ hr.wp-block-separator.is-style-dots {
 
 .wp-block[data-align="full"] .wp-block-columns > .editor-inner-blocks {
 	padding: 0 30px;
+}
+
+/* More Styles
+---------------------------------------------------------------------------- */
+
+.has-theme-primary-background-color,
+.has-theme-secondary-background-color,
+.has-darkgrey-background-color,
+.has-lightgrey-background-color {
+	color: #fff;
+}
+
+.has-theme-primary-background-color > p,
+.has-theme-primary-background-color > h1,
+.has-theme-primary-background-color > h2,
+.has-theme-primary-background-color > h3,
+.has-theme-primary-background-color > h4,
+.has-theme-primary-background-color > h5,
+.has-theme-primary-background-color > h6,
+.has-theme-primary-background-color > a,
+.has-theme-secondary-background-color > p,
+.has-theme-secondary-background-color > h1,
+.has-theme-secondary-background-color > h2,
+.has-theme-secondary-background-color > h3,
+.has-theme-secondary-background-color > h4,
+.has-theme-secondary-background-color > h5,
+.has-theme-secondary-background-color > h6,
+.has-theme-secondary-background-color > a,
+.has-darkgrey-background-color > p,
+.has-darkgrey-background-color > h1,
+.has-darkgrey-background-color > h2,
+.has-darkgrey-background-color > h3,
+.has-darkgrey-background-color > h4,
+.has-darkgrey-background-color > h5,
+.has-darkgrey-background-color > h6,
+.has-darkgrey-background-color > a,
+.has-lightgrey-background-color > p,
+.has-lightgrey-background-color > h1,
+.has-lightgrey-background-color > h2,
+.has-lightgrey-background-color > h3,
+.has-lightgrey-background-color > h4,
+.has-lightgrey-background-color > h5,
+.has-lightgrey-background-color > h6,
+.has-lightgrey-background-color > a {
+	color: #fff;
+}
+
+.has-white-background-color {
+	color: #33658a;
+}
+
+.has-white-background-color > p,
+.has-white-background-color > h1,
+.has-white-background-color > h2,
+.has-white-background-color > h3,
+.has-white-background-color > h4,
+.has-white-background-color > h5,
+.has-white-background-color > h6,
+.has-white-background-color > a {
+	color: #33658a;
+}
+
+.has-theme-primary-background-color,
+.wp-block-pullquote.is-style-solid-color.has-theme-primary-background-color {
+	background-color: #2f4858;
+}
+
+.has-theme-secondary-background-color,
+.wp-block-pullquote.is-style-solid-color.has-theme-secondary-background-color {
+	background-color: #81939b;
+}
+
+.has-darkgrey-background-color,
+.wp-block-pullquote.is-style-solid-color.has-darkgrey-background-color {
+	background-color: #33658a;
+}
+
+.has-lightgrey-background-color,
+.wp-block-pullquote.is-style-solid-color.has-lightgrey-background-color {
+	background-color: #d9dcd6;
+}
+
+.has-white-background-color,
+.wp-block-pullquote.is-style-solid-color.has-white-background-color {
+	background-color: #fff;
+}
+
+.has-theme-primary-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-theme-primary-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-theme-primary-color > p {
+	color: #2f4858;
+}
+
+.has-theme-secondary-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-theme-secondary-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-theme-secondary-color > p {
+	color: #81939b;
+}
+
+.has-darkgrey-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-darkgrey-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-darkgrey-color > p {
+	color: #33658a;
+}
+
+.has-lightgrey-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-lightgrey-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-lightgrey-color > p {
+	color: #d9dcd6;
+}
+
+.has-white-color,
+.wp-block-pullquote.is-style-solid-color blockquote.has-white-color {
+	color: #fff;
 }
