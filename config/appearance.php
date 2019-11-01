@@ -49,7 +49,7 @@ return [
 	'editor-font-sizes'    => [
 		[
 			'name' => __( 'Small', 'raw-child' ),
-			'size' => 12,
+			'size' => 14,
 			'slug' => 'small',
 		],
 		[
@@ -59,12 +59,12 @@ return [
 		],
 		[
 			'name' => __( 'Large', 'raw-child' ),
-			'size' => 20,
+			'size' => 24,
 			'slug' => 'large',
 		],
 		[
 			'name' => __( 'Larger', 'raw-child' ),
-			'size' => 24,
+			'size' => 28,
 			'slug' => 'larger',
 		],
 	],
