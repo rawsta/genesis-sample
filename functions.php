@@ -49,10 +49,10 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.p
 // Let's get my stuff
 //---------------->
 // Removes unused Functions.
-require_once get_stylesheet_directory() . '/inc/wp-clean.php';
+require_once get_stylesheet_directory() . '/lib/wp-clean.php';
 
 // Let's add some branding.
-require_once get_stylesheet_directory() . '/inc/branding.php';
+require_once get_stylesheet_directory() . '/lib/branding.php';
 
 
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
@@ -145,7 +145,10 @@ function raw_child_post_type_support() {
 
 }
 
-// Adds image sizes.
+/**
+ * Add various Imagesizes and register them
+ *  TODO: Fix sizes
+ */
 add_image_size( 'sidebar-featured', 75, 75, true ); // Hard Crop Mode.
 add_image_size( 'raw-squared', 400, 400, [ 'left', 'top' ] ); // Hard Crop center/top Mode.
 add_image_size( 'raw-post-images', 480, 320, true ); // Hard Crop Mode.
