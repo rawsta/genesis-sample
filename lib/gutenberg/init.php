@@ -11,6 +11,7 @@
 add_action( 'wp_enqueue_scripts', 'raw_child_enqueue_gutenberg_frontend_styles' );
 /**
  * Enqueues Gutenberg front-end styles.
+ * TODO: move from front-end.css to blocks.css
  *
  * @since 1.0.0
  */
@@ -18,7 +19,7 @@ function raw_child_enqueue_gutenberg_frontend_styles() {
 
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
+		get_stylesheet_directory_uri() . '/lib/gutenberg/blocks.css',
 		[ genesis_get_theme_handle() ],
 		genesis_get_theme_version()
 	);
