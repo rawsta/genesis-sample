@@ -118,6 +118,33 @@ html {
 	box-sizing: inherit;
 }
 
+/* Defaults
+---------------------------------------------------------------------------- */
+
+/* Let's try Variables!
+--------------------------------------------- */
+
+:root {
+	--main-bg: #fff;
+	--dirty-white: #dee5e8;
+	--main-text: #2f4858;
+	--theme-primary: #ff8300;
+	--theme-secondary: #830000;
+	--grey-primary: #707070;
+	--grey-secondary: #81939B;
+
+	--head-font: 'Source Sans Pro', sans-serif;
+	--main-font: 'Barlow', sans-serif;
+	--main-font-size: 2rem;
+	--sub-font-size: 1.8rem;
+	--small-font-size: 1.6rem;
+	--tiny-font-size: 1.4rem;
+
+	--main-transition: all 350ms ease-in-out;
+
+	--margin-bottom: 40px;
+}
+
 /* Float Clearing
 --------------------------------------------- */
 
@@ -158,37 +185,13 @@ html {
 	display: table;
 }
 
-
-/* Defaults
----------------------------------------------------------------------------- */
-
-/* Let's try Variables!
---------------------------------------------- */
-
-:root {
-	--main-bg: #fff;
-	--dirty-white: #dee5e8;
-	--main-text: #332;
-	--theme-primary: #ff8300;
-	--theme-secondary: #830000;
-	--grey-primary: #707070;
-	--grey-secondary: #81939B;
-
-	--main-font: "Source Sans Pro", sans-serif;
-	--main-font-size: 20px;
-	--sub-font-size: 18px;
-
-	--main-transition: all 300ms ease-in-out;
-
-	--margin-bottom: var(--margin-bottom);
-}
-
 /* Typographical Elements
 --------------------------------------------- */
 
 html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	font-size: 62.5%;
 }
 
 body {
@@ -200,6 +203,8 @@ body {
 	line-height: 1.625;
 	margin: 0;
 	overflow-x: hidden;
+	scrollbar-color: var(--theme-primary) var(--main-bg);
+	scrollbar-width: thin;
 }
 
 button,
@@ -279,7 +284,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--main-font);
+	font-family: var(--head-font);
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -290,11 +295,12 @@ h1 {
 }
 
 h2 {
-	font-size: 27px;
+	font-size: calc(var(--main-font-size) + 7px);
 }
 
 h3 {
-	font-size: 24px;
+	/* font-size: 24px; */
+	font-size: calc(var(--main-font-size) + 4px);
 }
 
 h4 {
@@ -728,7 +734,8 @@ th:last-child {
 .archive-description .entry-title,
 .archive-title,
 .author-box-title {
-	font-size: 20px;
+	font-size: 2.4rem;
+	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -834,6 +841,10 @@ img.alignright,
 
 .widget {
 	margin-bottom: var(--margin-bottom);
+}
+
+.widget p{
+	font-size: var(--small-font-size);
 }
 
 .widget p:last-child,
@@ -1320,7 +1331,7 @@ img.alignright,
 --------------------------------------------- */
 
 p.entry-meta {
-	font-size: var(--sub-font-size);
+	font-size: var(--tiny-font-size);
 	margin-bottom: 0;
 }
 
@@ -1468,6 +1479,11 @@ p.entry-meta {
 	padding-right: 30px;
 }
 
+.footer-widget-area p {
+	margin-bottom: 0;
+	font-size: var(--tiny-font-size);
+}
+
 .footer-widget-area:last-child,
 .footer-widgets .widget:last-child {
 	margin-bottom: 0;
@@ -1488,6 +1504,7 @@ p.entry-meta {
 
 .site-footer p {
 	margin-bottom: 0;
+	font-size: var(--tiny-font-size);
 }
 
 
