@@ -133,8 +133,8 @@ html {
 	--grey-primary: #707070;
 	--grey-secondary: #81939B;
 
-	--head-font: 'Source Sans Pro', sans-serif;
-	--main-font: 'Barlow', sans-serif;
+	--main-font: 'Source Sans Pro', sans-serif;
+	--head-font: 'Barlow', sans-serif;
 	--main-font-size: 2rem;
 	--sub-font-size: 1.8rem;
 	--small-font-size: 1.6rem;
@@ -735,14 +735,13 @@ th:last-child {
 .archive-title,
 .author-box-title {
 	font-size: 2.4rem;
-	font-size: 24px;
 	font-weight: 600;
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--margin-bottom) / 4);
 }
 
 .entry-title {
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--margin-bottom) / 4);
 }
 
 .entry-title a,
@@ -759,7 +758,7 @@ th:last-child {
 .widget-title {
 	font-size: var(--main-font-size);
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin-bottom: calc(var(--margin-bottom) / 2);
 }
 
 .genesis-title-hidden .site-inner {
@@ -803,7 +802,7 @@ img.centered,
 
 img.alignnone,
 .alignnone {
-	margin-bottom: 15px;
+	margin-bottom: calc(var(--margin-bottom) / 2);
 }
 
 a.alignleft,
@@ -820,7 +819,7 @@ img.alignright,
 
 .gallery-caption,
 .wp-caption-text {
-	font-size: 14px;
+	font-size: var(--tiny-font-size);
 	font-weight: 600;
 	margin: 0;
 	text-align: center;
@@ -853,7 +852,7 @@ img.alignright,
 }
 
 .widget ul > li {
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--margin-bottom) / 4);
 }
 
 .widget ul > li:last-of-type {
@@ -887,7 +886,7 @@ img.alignright,
 
 .featured-content .entry {
 	border-bottom: 1px solid var(--grey-primary);
-	margin-bottom: 20px;
+	margin-bottom: calc(var(--margin-bottom) / 4);
 }
 
 .featured-content .entry:last-of-type {
@@ -920,7 +919,7 @@ img.alignright,
 
 .enews-widget input {
 	font-size: var(--sub-font-size);
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--margin-bottom) / 4);
 }
 
 .after-entry .enews-widget input {
@@ -1069,7 +1068,7 @@ img.alignright,
 }
 
 .site-title {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 600;
 	line-height: 1;
 	margin-bottom: 0;
@@ -1147,7 +1146,7 @@ img.alignright,
 
 .genesis-nav-menu .sub-menu a {
 	background-color: var(--main-bg);
-	font-size: 14px;
+	font-size: var(--small-font-size);
 	position: relative;
 	word-wrap: break-word;
 }
@@ -1336,7 +1335,7 @@ p.entry-meta {
 }
 
 .entry-header .entry-meta {
-	margin-bottom: 20px;
+	margin-bottom: calc(var(--margin-bottom) / 2);
 }
 
 .entry-footer .entry-meta {
@@ -1407,7 +1406,7 @@ p.entry-meta {
 }
 
 .comment-header {
-	margin-bottom: 30px;
+	margin-bottom: calc(var(--margin-bottom) / 2);
 }
 
 .comment-content {
@@ -1455,7 +1454,7 @@ p.entry-meta {
 }
 
 .sidebar p {
-	margin-bottom: 20px;
+	margin-bottom: calc(var(--margin-bottom) / 2);
 }
 
 /* Footer Widgets

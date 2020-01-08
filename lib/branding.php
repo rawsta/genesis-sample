@@ -70,9 +70,9 @@ function raw_child_login_logo() {
 add_action( 'login_head', 'raw_child_login_logo' );
 
 // Remember Me always
-add_filter( 'login_footer', 'raw_child_remember_me' );
+// add_filter( 'login_footer', 'raw_child_remember_me' );
 
-add_action( 'init', 'raw_child_remember_me' );
-function raw_child_remember_me() {
-    echo "<script>document.getElementById('rememberme').checked = true;</script>";
-}
+// add_action( 'init', 'raw_child_remember_me' );
+// function raw_child_remember_me() {
+//     echo "<script>document.getElementById('rememberme').checked = true;</script>";
+// }

@@ -284,11 +284,11 @@ h6.light {
 }
 
 .has-text-color.has-lightgreen-color {
-	color: var(--theme-lightgreen);;
+	color: var(--theme-lightgreen);
 }
 
 .has-text-color.has-orange-color {
-	color: var(--theme-orange)
+	color: var(--theme-orange);
 }
 
 .has-text-color.has-lightblue-color {
@@ -306,7 +306,7 @@ h6.light {
 }
 
 .has-background.has-orange-background-color {
-	background: var(--theme-orange)
+	background: var(--theme-orange);
 }
 
 .has-background.has-lightblue-background-color {
@@ -545,7 +545,7 @@ h6.light {
 .wp-block-quote p,
 .site-container .wp-block-pullquote p,
 .site-container .wp-block-quote p {
-	font-family: "Source Sans Pro", serif;
+	font-family: var(--main-font);
 	font-size: var(--main-font-size);
 	font-style: italic;
 	line-height: 1.8;
@@ -594,7 +594,7 @@ h6.light {
 .site-container .wp-block-quote cite {
 	color: #506169;
 	display: block;
-	font-family: "Source Sans Pro", serif;
+	font-family: var(--main-font);
 	font-size: var(--sub-font-size);
 	font-style: italic;
 	margin-top: -25px;
@@ -859,7 +859,7 @@ hr.wp-block-separator {
 }
 
 .entry .entry-content .wp-block-pullquote blockquote {
-	color: var(--theme-orange)
+	color: var(--theme-orange);
 	border: none;
 	margin-top: 3rem;
 	margin-bottom: 3.33rem;
@@ -915,7 +915,7 @@ hr.wp-block-separator {
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color {
-	background-color: var(--theme-orange)
+	background-color: var(--theme-orange);
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -1194,12 +1194,12 @@ hr.wp-block-separator {
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:hover {
-	background: var(--theme-orange)
+	background: var(--theme-orange);
 	cursor: pointer;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:focus {
-	background: var(--theme-orange)
+	background: var(--theme-orange);
 	outline: thin dotted;
 	outline-offset: -4px;
 }
