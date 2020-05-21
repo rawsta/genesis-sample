@@ -54,6 +54,12 @@ require_once get_stylesheet_directory() . '/lib/wp-clean.php';
 // Let's add some branding.
 require_once get_stylesheet_directory() . '/lib/branding.php';
 
+// // Terminarten Taxonomie
+// require_once get_stylesheet_directory() . '/lib/terminarten.php';
+
+// // Termine PostType
+// require_once get_stylesheet_directory() . '/lib/termine.php';
+
 
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
 /**
@@ -244,3 +250,4 @@ function raw_child_comments_gravatar( $args ) {
 	return $args;
 
 }
+
