@@ -170,7 +170,11 @@ msgid "rawsta"
 msgstr ""
 
 #. Author URI of the plugin/theme
+<<<<<<< HEAD:languages/raw-child.pot
 msgid "https://www.rawsta.de/"
+=======
+msgid "https://www.studiopress.com/"
+>>>>>>> 063fef9c16d31734ab1dd7a759485abdb3a0661a:languages/genesis-sample.pot
 msgstr ""
 
 #. Template Name of the plugin/theme
