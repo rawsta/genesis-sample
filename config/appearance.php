@@ -27,7 +27,7 @@ $raw_child_link_color_contrast   = raw_child_color_contrast( $raw_child_link_col
 $raw_child_link_color_brightness = raw_child_color_brightness( $raw_child_link_color, 35 );
 
 return [
-	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
+	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Barlow:wght@400,600,700&display=swap',
 	'content-width'        => 1062,
 	'button-bg'            => $raw_child_link_color,
 	'button-color'         => $raw_child_link_color_contrast,
