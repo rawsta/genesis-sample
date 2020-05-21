@@ -1,0 +1,125 @@
+:root {
+	--main-font: 'Inter', sans-serif;
+	--main-font-var: 'Inter var', sans-serif;
+	--head-font: 'Barlow', sans-serif;
+
+	--main-bg: #fff;
+	--font-color: #1c1c1c;
+	--font-color-alt: #35424c;
+
+	--text-bg: #ededed;
+	--block-bg: #efefef;
+	--light-grey: #dee5e8;
+	--medium-grey: #6f6f6f; /* 707070*/
+	--medium-grey2: #585858; /* 81939B */
+	--dark-grey: #506169;
+	--black: #000;
+
+	--theme-primary: #ff8300;
+	--theme-secondary: #830000;
+
+	/* fluiditype */
+	--fontSize: calc(12px + 0.698vw); /* The character count on */
+	--lineHeight: calc(var(--fontSize) * 1.4);
+	--letterSpacing: calc(var(--fontSize) * 0.0015);
+	--fontWeight: 300;
+
+	--main-font-size: 2rem;
+	--sub-font-size: 1.8rem;
+	--small-font-size: 1.6rem;
+	--tiny-font-size: 1.4rem;
+
+	--main-transition: all 350ms ease-in-out;
+
+	--border-radius: 2px;
+	--margin-bottom: 40px;
+
+}
+
+
+/* Box Sizing
+--------------------------------------------- */
+
+html {
+	box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    /* font-size: 62.5%; */
+    -webkit-overflow-scrolling:touch;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: var(--main-bg);
+	color: var(--main-text);
+	margin: 0;
+	overflow-x: hidden;
+	scrollbar-color: var(--theme-primary) var(--main-bg);
+	scrollbar-width: thin;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	vertical-align: top;
+}
+
+figure {
+    margin:1em 0 0.5em;
+    padding:0;
+}
+
+figure + p {
+    margin-top:0.5em;
+}
+
+figure figcaption {
+    opacity:0.65;
+    font-size:0.85em;
+}
+
+
+hr{
+    height:1px;
+    margin:2em 0;
+    border:0;
+    background:#f2f2f2;
+  }
+
+  details{
+    margin:1em 0;
+  }
+  details[open]{
+    padding-bottom:0.5em;
+    border-bottom:1px solid #f2f2f2;
+  }
+
+  summary{
+    display:inline-block;
+    font-weight:700;
+    border-bottom:1px dashed;
+    cursor:pointer;
+  }
+  summary::-webkit-details-marker{
+    display:none;
+  }
+
+  noscript{
+    color:#d00000;
+  }

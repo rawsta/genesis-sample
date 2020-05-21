@@ -38,13 +38,18 @@
     --theme-secondary: #830000;
     --theme-orange: #f57c00;
     --theme-lightgreen: #64dd17;
-    --theme-lightblue: #86bbd8;
+	--theme-lightblue: #86bbd8;
 
-    --main-font: "Source Sans Pro", sans-serif;
-	--main-font-size: 2rem;
-    --sub-font-size: 1.8rem;
-	--small-font-size: 1.6rem;
-	--tiny-font-size: 1.4rem;
+	--fontSize: calc(12px + 0.698vw); /* The character count on */
+	--lineHeight: calc(var(--fontSize) * 1.4);
+	--letterSpacing: calc(var(--fontSize) * 0.0015);
+	--fontWeight: 300;
+
+    --main-font: "Inter", sans-serif;
+	--main-font-size: calc(var(--fontSize) * 1);
+    --sub-font-size: calc(var(--fontSize) * 0.75);
+	--small-font-size: calc(var(--fontSize) * 0.7);
+	--tiny-font-size: calc(var(--fontSize) * 0.6);
 }
 
 /* Basic Styles
@@ -207,7 +212,7 @@ h6.light {
 .entry-content h5.is-style-large-white,
 .entry-content h6.is-style-large-white,
 .entry-content .is-style-large-white {
-	font-size: 48px;
+	/* font-size: 48px; */
 	font-weight: 200;
 	color: var(--theme-white);
 }
@@ -221,7 +226,7 @@ h6.light {
 .entry-content .is-style-white-on-black-title {
 	display: inline;
 	margin: 0 auto;
-	font-size: 46px;
+	/* font-size: 46px; */
 	line-height: 1.3;
 	color: var(--theme-white);
 	background: var(--theme-primary);
@@ -320,7 +325,7 @@ h6.light {
 .site-container p.is-style-white-on-black-text {
 	background: #000;
 	color: var(--theme-white);
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 	line-height: 1.5;
 	font-weight: 200;
 }
@@ -332,7 +337,7 @@ h6.light {
 	min-height: 60px;
 	background-position: 10px center;
 	border: 1px solid rgb(0,0,0,0.1);
-	border-radius: 4px;
+	border-radius: calc(var(--border-radius) * 2);
 	padding: 16px 16px 16px 70px;
 }
 
@@ -343,7 +348,7 @@ h6.light {
 	min-height: 60px;
 	background-position: 10px center;
 	border: 1px solid rgb(0,0,0,0.1);
-	border-radius: 4px;
+	border-radius: calc(var(--border-radius) * 2);
 	padding: 16px 16px 16px 70px;
 }
 
@@ -354,7 +359,7 @@ h6.light {
 	min-height: 60px;
 	background-position: 10px center;
 	border: 1px solid rgb(0,0,0,0.1);
-	border-radius: 4px;
+	border-radius: calc(var(--border-radius) * 2);
 	padding: 16px 16px 16px 70px;
 }
 
@@ -400,18 +405,22 @@ h6.light {
 /* Font Sizes - using em to have them relative to parent */
 
 .entry .entry-content .has-small-font-size {
+	/* font-size: 0.88889em; */
 	font-size: 0.88889em;
 }
 
 .entry .entry-content .has-normal-font-size {
+	/* font-size: 1.125em; */
 	font-size: 1.125em;
 }
 
 .entry .entry-content .has-large-font-size {
+	/* font-size: 1.6875em; */
 	font-size: 1.6875em;
 }
 
 .entry .entry-content .has-larger-font-size {
+	/* font-size: 2.25em; */
 	font-size: 2.25em;
 }
 

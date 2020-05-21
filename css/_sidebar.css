@@ -1,0 +1,31 @@
+/* Sidebar
+---------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: var(--sub-font-size);
+	line-height: 1.5;
+}
+
+.sidebar .widget {
+	margin-bottom: var(--margin-bottom);
+}
+
+.sidebar p {
+	margin-bottom: calc(var(--margin-bottom) / 2);
+}
+
+@media only screen and (min-width: 960px) {
+
+    /* Sidebar
+	--------------------------------------------- */
+
+	.sidebar {
+		float: right;
+		width: 30%;
+	}
+
+	.sidebar-content .sidebar {
+		float: left;
+    }
+
+}

@@ -1,0 +1,205 @@
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content .entry {
+	border-bottom: 1px solid var(--grey-primary);
+	margin-bottom: calc(var(--margin-bottom) / 4);
+}
+
+.featured-content .entry:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.featured-content .entry-title {
+	font-size: var(--sub-font-size);
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+/* Content Area
+---------------------------------------------------------------------------- */
+
+/* Titles
+--------------------------------------------- */
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+	/* font-size: 2.4rem;
+	font-weight: 600; */
+	margin-bottom: calc(var(--margin-bottom) / 4);
+}
+
+.entry-title {
+	/* font-size: 30px; */
+	margin-bottom: calc(var(--margin-bottom) / 4);
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+	color: var(--main-text);
+	text-decoration: none;
+}
+
+.entry-title a:focus,
+.entry-title a:hover {
+	color: var(--theme-primary);
+}
+
+.widget-title {
+	font-size: var(--main-font-size);
+	font-weight: 600;
+	margin-bottom: calc(var(--margin-bottom) / 2);
+}
+
+.genesis-title-hidden .site-inner {
+	padding-top: 0;
+}
+
+
+/* Entry Content
+--------------------------------------------- */
+
+.entry {
+	margin-bottom: var(--margin-bottom);
+}
+
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 30px;
+	padding-left: 40px;
+}
+
+.entry-content ol > li {
+	list-style-type: decimal;
+}
+
+.entry-content ul > li {
+	list-style-type: disc;
+}
+
+.entry-content ol ul > li,
+.entry-content ul ul > li {
+	list-style-type: circle;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content code {
+	background-color: var(--dirty-white);
+}
+
+.content .sticky {
+	background-color: var(--dirty-white);
+	padding: 30px;
+}
+
+
+
+/* Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+	font-size: var(--tiny-font-size);
+	margin-bottom: 0;
+}
+
+.entry-header .entry-meta {
+	margin-bottom: calc(var(--margin-bottom) / 2);
+}
+
+.entry-footer .entry-meta {
+	border-top: 1px solid var(--grey-primary);
+	padding-top: 20px;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+	border-radius: 50%;
+	float: left;
+}
+
+.author-box .avatar,
+.alignleft .avatar {
+	margin-right: 20px;
+}
+
+.alignright .avatar {
+	margin-left: 20px;
+}
+
+.comment .avatar {
+	margin: 0 15px 20px 0;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	/* Do not hyphenate entry title on tablet view and bigger. */
+	.entry-title {
+		-webkit-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none;
+	}
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    /* Content
+	--------------------------------------------- */
+
+	.content {
+		float: left;
+		width: 65%;
+	}
+
+	.sidebar-content .content {
+		float: right;
+	}
+
+	.full-width-content .content {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+    }
+
+    /* Entry Misc.
+	--------------------------------------------- */
+
+	.after-entry,
+	.author-box,
+	.comment-respond,
+	.entry,
+	.entry-comments,
+	.entry-pings {
+		margin-bottom: 60px;
+    }
+
+    /* Author Box
+	--------------------------------------------- */
+
+	.author-box {
+		background-color: var(--dirty-white);
+		padding: 30px;
+	}
+
+
+}

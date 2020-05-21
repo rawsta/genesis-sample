@@ -1,0 +1,17 @@
+
+/* Site Footer
+---------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: var(--main-bg);
+	border-top: 1px solid var(--grey-primary);
+	font-size: var(--sub-font-size);
+	line-height: 1.5;
+	padding: 30px;
+	text-align: center;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+	font-size: var(--tiny-font-size);
+}
