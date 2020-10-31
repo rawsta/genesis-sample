@@ -70,6 +70,7 @@
 /* Responsive Menu
 --------------------------------------------- */
 
+
 .menu .menu-item:focus {
 	position: static;
 }
@@ -122,6 +123,10 @@
 
 .menu-toggle.activated::before {
 	content: "\f335";
+}
+
+.site-header .dashicons-before::before {
+	transition: none;
 }
 
 .site-header .menu-toggle::before {

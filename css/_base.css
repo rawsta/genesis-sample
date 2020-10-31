@@ -44,7 +44,7 @@ html {
 	box-sizing: border-box;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    /* font-size: 62.5%; */
+    font-size: 62.5%;
     -webkit-overflow-scrolling:touch;
 }
 
@@ -94,32 +94,33 @@ figure figcaption {
     font-size:0.85em;
 }
 
-
 hr{
-    height:1px;
-    margin:2em 0;
-    border:0;
-    background:#f2f2f2;
-  }
+	height:1px;
+	margin:2em 0;
+	border:0;
+	background:#f2f2f2;
+}
 
-  details{
-    margin:1em 0;
-  }
-  details[open]{
-    padding-bottom:0.5em;
-    border-bottom:1px solid #f2f2f2;
-  }
+details{
+	margin:1em 0;
+}
 
-  summary{
-    display:inline-block;
-    font-weight:700;
-    border-bottom:1px dashed;
-    cursor:pointer;
-  }
-  summary::-webkit-details-marker{
-    display:none;
-  }
+details[open]{
+	padding-bottom:0.5em;
+	border-bottom:1px solid #f2f2f2;
+}
 
-  noscript{
-    color:#d00000;
-  }
+summary{
+	display:inline-block;
+	font-weight:700;
+	border-bottom:1px dashed;
+	cursor:pointer;
+}
+
+summary::-webkit-details-marker{
+	display:none;
+}
+
+noscript{
+	color:#d00000;
+}

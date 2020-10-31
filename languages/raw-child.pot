@@ -48,7 +48,7 @@ msgid "Larger"
 msgstr ""
 
 #: config/onboarding-shared.php:19
-msgid "Atomic Blocks"
+msgid "Genesis Blocks"
 msgstr ""
 
 #: config/onboarding-shared.php:24

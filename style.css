@@ -5,11 +5,7 @@ Description: Another Fork of the genesis-sample
 Author: rawsta
 Author URI: https://www.rawsta.de/
 
-<<<<<<< HEAD
-Version: 1.0.0
-=======
 Version: 3.1.0
->>>>>>> 063fef9c16d31734ab1dd7a759485abdb3a0661a
 
 Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
@@ -92,7 +88,7 @@ Text Domain: raw-child
 /* import inter font */
 @import url('https://rsms.me/inter/inter.css');
 @import url("css/_normalize.css");
-@import 'css/_base.css';
+@import url('css/_base.css');
 @import url("css/_utility.css");
 @import url("css/_typography.css");
 @import url("css/_gallery.css");
@@ -146,23 +142,7 @@ Text Domain: raw-child
 	--margin-bottom: 40px;
 
 }
-/* @import url("css/_normalize.css");
-@import '/css/_base.css';
-@import url("css/_utility.css");
-@import url("css/_typography.css");
-@import url("css/_gallery.css");
-@import url("css/_tables.css");
-@import url("css/_screen-reader.css");
-@import url("css/_structure.css");
-@import url("css/_widgets.css");
-@import url("css/_content.css");
-@import url("css/_plugins.css");
-@import url("css/_header.css");
-@import url("css/_navigation.css");
-@import url("css/_comments.css");
-@import url("css/_sidebar.css");
-@import url("css/_footer.css");
-@import url("css/_print.css"); */
+
 
 
 /* Defaults

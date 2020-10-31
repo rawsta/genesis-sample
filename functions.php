@@ -37,30 +37,20 @@ require_once get_stylesheet_directory() . '/lib/customize.php';
 // Includes Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/output.php';
 
-// Adds WooCommerce support.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
-
-// Adds the required WooCommerce styles and Customizer CSS.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
-
-// Adds the Genesis Connect WooCommerce notice.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
-
-// Let's get my stuff
-//---------------->
-// Removes unused Functions.
-require_once get_stylesheet_directory() . '/lib/wp-clean.php';
-
 // Let's add some branding.
 require_once get_stylesheet_directory() . '/lib/branding.php';
 
-// // Terminarten Taxonomie
-// require_once get_stylesheet_directory() . '/lib/terminarten.php';
+// Adds WooCommerce support.
+// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
 
-// // Termine PostType
-// require_once get_stylesheet_directory() . '/lib/termine.php';
+// Adds the required WooCommerce styles and Customizer CSS.
+// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
+
+// Adds the Genesis Connect WooCommerce notice.
+// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 
+//TODO: dont start the engine
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
 /**
  * Adds Gutenberg opt-in features and styling.
@@ -90,7 +80,7 @@ function raw_child_enqueue_scripts_styles() {
 		genesis_get_theme_handle() . '-fonts',
 		$appearance['fonts-url'],
 		[],
-		genesis_get_theme_version()
+		null
 	);
 
 	wp_enqueue_style( 'dashicons' );

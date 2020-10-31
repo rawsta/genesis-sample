@@ -360,19 +360,28 @@ p.has-background.light-text a:hover {
 
 hr.wp-block-separator {
 	border: none;
-	border-top: 1px solid #eee;
+	border-bottom: 1px solid currentColor;
+	color: #eee;
 	margin: 1.65em auto;
 }
 
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 1px;
+}
+
 hr.wp-block-separator.is-style-dots {
-	border: none;
+	border-width: 0;
+	color: #333;
 }
 
 /* Tables
 ---------------------------------------------------------------------------- */
 
+table {
+	width: 100%;
+}
+
 .wp-block-table {
-	font-size: 18px;
 	line-height: 2;
 }
 
@@ -380,23 +389,35 @@ hr.wp-block-separator.is-style-dots {
 .wp-block-table th,
 .wp-block-table tr {
 	border: none;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	font-weight: 600;
 }
 
 .wp-block-table tr {
 	border-top: 1px solid #eee;
 }
 
+.wp-block-table tr:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
 .wp-block-table tbody {
 	border-bottom: 1px solid #eee;
 }
 
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
+}
+
 /* Buttons
 ---------------------------------------------------------------------------- */
-
-/* .ab-block-cta .ab-button {
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 600;
-} */
+	.gb-block-cta .gb-button {
+		font-family: "Source Sans Pro", sans-serif;
+		font-weight: 600;
+	}
 
 /* .wp-block-button .wp-block-button__link {
 	border: 0;

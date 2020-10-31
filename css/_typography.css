@@ -107,9 +107,9 @@ pre {
     border-radius: 4px;
     overflow-x: auto;
     padding: 2.5vw;
-    tab-size: 4;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
+    tgb-size: 4;
+    -moz-tgb-size: 4;
+    -o-tgb-size: 4;
     white-space: pre-wrap;
     word-break: break-all;
     font-size: calc(var(--fontSize) * 1.1);

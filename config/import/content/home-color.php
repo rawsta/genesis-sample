@@ -33,52 +33,52 @@ return <<<CONTENT
 </div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:atomic-blocks/ab-container {"containerPaddingTop":4.5,"containerWidth":"full","containerBackgroundColor":"#111"} -->
-<div style="background-color:#111;padding-left:0%;padding-right:0%;padding-bottom:0%;padding-top:4.5%;margin-top:0%;margin-bottom:0%" class="wp-block-atomic-blocks-ab-container alignfull ab-block-container"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1600px"><!-- wp:atomic-blocks/ab-cta {"buttonText":"Get Started Today","buttonBackgroundColor":"#0072e5","ctaBackgroundColor":"#111111","ctaTextColor":"#f5f5f5"} -->
-<div style="background-color:#111111;text-align:center" class="wp-block-atomic-blocks-ab-cta ab-block-cta"><div class="ab-cta-content"><h2 class="ab-cta-title ab-font-size-32" style="color:#f5f5f5">Ready to take your next step?</h2><div class="ab-cta-text ab-font-size-32" style="color:#f5f5f5"><p>Grow your audience and build a profitable online business.</p></div></div><div class="ab-cta-button"><a href="#" target="_self" class="ab-button ab-button-shape-rounded ab-button-size-medium" style="color:#ffffff;background-color:#0072e5">Get Started Today</a></div></div>
-<!-- /wp:atomic-blocks/ab-cta -->
+<!-- wp:genesis-blocks/gb-container {"containerPaddingTop":4.5,"containerWidth":"full","containerBackgroundColor":"#111"} -->
+<div style="background-color:#111;padding-left:0%;padding-right:0%;padding-bottom:0%;padding-top:4.5%;margin-top:0%;margin-bottom:0%" class="wp-block-genesis-blocks-gb-container alignfull gb-block-container"><div class="gb-container-inside"><div class="gb-container-content" style="max-width:1600px"><!-- wp:genesis-blocks/gb-cta {"buttonText":"Get Started Today","buttonBackgroundColor":"#0072e5","ctaBackgroundColor":"#111111","ctaTextColor":"#f5f5f5"} -->
+<div style="background-color:#111111;text-align:center" class="wp-block-genesis-blocks-gb-cta gb-block-cta"><div class="gb-cta-content"><h2 class="gb-cta-title gb-font-size-32" style="color:#f5f5f5">Ready to take your next step?</h2><div class="gb-cta-text gb-font-size-32" style="color:#f5f5f5"><p>Grow your audience and build a profitable online business.</p></div></div><div class="gb-cta-button"><a href="#" target="_self" class="gb-button gb-button-shape-rounded gb-button-size-medium" style="color:#ffffff;background-color:#0072e5">Get Started Today</a></div></div>
+<!-- /wp:genesis-blocks/gb-cta -->
 
 </div></div></div>
-<!-- /wp:atomic-blocks/ab-container -->
+<!-- /wp:genesis-blocks/gb-container -->
 
-<!-- wp:atomic-blocks/ab-spacer {"spacerHeight":60} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:60px"/></div>
-<!-- /wp:atomic-blocks/ab-spacer -->
+<!-- wp:genesis-blocks/gb-spacer {"spacerHeight":60} -->
+<div style="color:#ddd" class="wp-block-genesis-blocks-gb-spacer gb-block-spacer gb-divider-solid gb-divider-size-1"><hr style="height:60px"/></div>
+<!-- /wp:genesis-blocks/gb-spacer -->
 
 <!-- wp:heading {"align":"center"} -->
 <h2 style="text-align:center">What people are saying</h2>
 <!-- /wp:heading -->
 
-<!-- wp:atomic-blocks/ab-spacer {"spacerHeight":25} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:25px"/></div>
-<!-- /wp:atomic-blocks/ab-spacer -->
+<!-- wp:genesis-blocks/gb-spacer {"spacerHeight":25} -->
+<div style="color:#ddd" class="wp-block-genesis-blocks-gb-spacer gb-block-spacer gb-divider-solid gb-divider-size-1"><hr style="height:25px"/></div>
+<!-- /wp:genesis-blocks/gb-spacer -->
 
 <!-- wp:columns {"columns":3,"align":"wide"} -->
 <div class="wp-block-columns alignwide has-3-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:atomic-blocks/ab-testimonial -->
-<div style="background-color:#f2f2f2;color:#32373c" class="wp-block-atomic-blocks-ab-testimonial left-aligned ab-font-size-18 ab-block-testimonial"><div class="ab-testimonial-text"><p>Your course helped me to grow my email list from 500 to over 10,000 subscribers—all within 3 months! </p></div><div class="ab-testimonial-info"><h2 class="ab-testimonial-name" style="color:#32373c">Jane</h2><small class="ab-testimonial-title" style="color:#32373c">Food Blogger</small></div></div>
-<!-- /wp:atomic-blocks/ab-testimonial --></div>
+<div class="wp-block-column"><!-- wp:genesis-blocks/gb-testimonial -->
+<div style="background-color:#f2f2f2;color:#32373c" class="wp-block-genesis-blocks-gb-testimonial left-aligned gb-font-size-18 gb-block-testimonial"><div class="gb-testimonial-text"><p>Your course helped me to grow my email list from 500 to over 10,000 subscribers—all within 3 months! </p></div><div class="gb-testimonial-info"><h2 class="gb-testimonial-name" style="color:#32373c">Jane</h2><small class="gb-testimonial-title" style="color:#32373c">Food Blogger</small></div></div>
+<!-- /wp:genesis-blocks/gb-testimonial --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:atomic-blocks/ab-testimonial -->
-<div style="background-color:#f2f2f2;color:#32373c" class="wp-block-atomic-blocks-ab-testimonial left-aligned ab-font-size-18 ab-block-testimonial"><div class="ab-testimonial-text"><p>I started using your email marketing technique and it helped me to make $5,000 more a month without any extra work! </p></div><div class="ab-testimonial-info"><h2 class="ab-testimonial-name" style="color:#32373c">Rob</h2><small class="ab-testimonial-title" style="color:#32373c">Copywriter</small></div></div>
-<!-- /wp:atomic-blocks/ab-testimonial --></div>
+<div class="wp-block-column"><!-- wp:genesis-blocks/gb-testimonial -->
+<div style="background-color:#f2f2f2;color:#32373c" class="wp-block-genesis-blocks-gb-testimonial left-aligned gb-font-size-18 gb-block-testimonial"><div class="gb-testimonial-text"><p>I started using your email marketing technique and it helped me to make $5,000 more a month without any extra work! </p></div><div class="gb-testimonial-info"><h2 class="gb-testimonial-name" style="color:#32373c">Rob</h2><small class="gb-testimonial-title" style="color:#32373c">Copywriter</small></div></div>
+<!-- /wp:genesis-blocks/gb-testimonial --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:atomic-blocks/ab-testimonial -->
-<div style="background-color:#f2f2f2;color:#32373c" class="wp-block-atomic-blocks-ab-testimonial left-aligned ab-font-size-18 ab-block-testimonial"><div class="ab-testimonial-text"><p>I was skeptical but I found that your system had multiplied my revenue by 40% after just the first quarter! </p></div><div class="ab-testimonial-info"><h2 class="ab-testimonial-name" style="color:#32373c">Susan</h2><small class="ab-testimonial-title" style="color:#32373c">Entrepreneur</small></div></div>
-<!-- /wp:atomic-blocks/ab-testimonial --></div>
+<div class="wp-block-column"><!-- wp:genesis-blocks/gb-testimonial -->
+<div style="background-color:#f2f2f2;color:#32373c" class="wp-block-genesis-blocks-gb-testimonial left-aligned gb-font-size-18 gb-block-testimonial"><div class="gb-testimonial-text"><p>I was skeptical but I found that your system had multiplied my revenue by 40% after just the first quarter! </p></div><div class="gb-testimonial-info"><h2 class="gb-testimonial-name" style="color:#32373c">Susan</h2><small class="gb-testimonial-title" style="color:#32373c">Entrepreneur</small></div></div>
+<!-- /wp:genesis-blocks/gb-testimonial --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:atomic-blocks/ab-spacer -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:30px"/></div>
-<!-- /wp:atomic-blocks/ab-spacer -->
+<!-- wp:genesis-blocks/gb-spacer -->
+<div style="color:#ddd" class="wp-block-genesis-blocks-gb-spacer gb-block-spacer gb-divider-solid gb-divider-size-1"><hr style="height:30px"/></div>
+<!-- /wp:genesis-blocks/gb-spacer -->
 
-<!-- wp:atomic-blocks/ab-container {"containerPaddingTop":12,"containerPaddingRight":5,"containerPaddingBottom":2.5,"containerPaddingLeft":5,"containerMarginTop":6,"containerMarginBottom":5,"containerWidth":"full","containerMaxWidth":1062,"containerBackgroundColor":"#111"} -->
-<div style="background-color:#111;padding-left:5%;padding-right:5%;padding-bottom:2.5%;padding-top:12%;margin-top:6%;margin-bottom:5%" class="wp-block-atomic-blocks-ab-container ab-block-container alignfull"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1062px"><!-- wp:columns -->
+<!-- wp:genesis-blocks/gb-container {"containerPaddingTop":12,"containerPaddingRight":5,"containerPaddingBottom":2.5,"containerPaddingLeft":5,"containerMarginTop":6,"containerMarginBottom":5,"containerWidth":"full","containerMaxWidth":1062,"containerBackgroundColor":"#111"} -->
+<div style="background-color:#111;padding-left:5%;padding-right:5%;padding-bottom:2.5%;padding-top:12%;margin-top:6%;margin-bottom:5%" class="wp-block-genesis-blocks-gb-container gb-block-container alignfull"><div class="gb-container-inside"><div class="gb-container-content" style="max-width:1062px"><!-- wp:columns -->
 <div class="wp-block-columns has-2-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"align":"left","customTextColor":"#f5f5f5","customFontSize":40} -->
 <p style="color:#f5f5f5;font-size:40px;text-align:left" class="has-text-color">Contact us today</p>
@@ -91,31 +91,31 @@ return <<<CONTENT
 <!-- /wp:button --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div></div>
-<!-- /wp:atomic-blocks/ab-container -->
+<!-- /wp:genesis-blocks/gb-container -->
 
-<!-- wp:atomic-blocks/ab-spacer {"spacerHeight":60} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:60px"/></div>
-<!-- /wp:atomic-blocks/ab-spacer -->
+<!-- wp:genesis-blocks/gb-spacer {"spacerHeight":60} -->
+<div style="color:#ddd" class="wp-block-genesis-blocks-gb-spacer gb-block-spacer gb-divider-solid gb-divider-size-1"><hr style="height:60px"/></div>
+<!-- /wp:genesis-blocks/gb-spacer -->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide has-2-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:atomic-blocks/ab-accordion {"accordionOpen":true} -->
-<div class="wp-block-atomic-blocks-ab-accordion ab-block-accordion ab-font-size-18"><details open><summary class="ab-accordion-title">Can I phone or email you?</summary><div class="ab-accordion-text"><!-- wp:paragraph -->
+<div class="wp-block-column"><!-- wp:genesis-blocks/gb-accordion {"accordionOpen":true} -->
+<div class="wp-block-genesis-blocks-gb-accordion gb-block-accordion gb-font-size-18"><details open><summary class="gb-accordion-title">Can I phone or email you?</summary><div class="gb-accordion-text"><!-- wp:paragraph -->
 <p>You can reach us on our <a href="#">contact page</a> or by calling us at 1.123.456.7891</p>
 <!-- /wp:paragraph --></div></details></div>
-<!-- /wp:atomic-blocks/ab-accordion -->
+<!-- /wp:genesis-blocks/gb-accordion -->
 
-<!-- wp:atomic-blocks/ab-accordion -->
-<div class="wp-block-atomic-blocks-ab-accordion ab-block-accordion ab-font-size-18"><details><summary class="ab-accordion-title">How long have you been in business?</summary><div class="ab-accordion-text"><!-- wp:paragraph -->
+<!-- wp:genesis-blocks/gb-accordion -->
+<div class="wp-block-genesis-blocks-gb-accordion gb-block-accordion gb-font-size-18"><details><summary class="gb-accordion-title">How long have you been in business?</summary><div class="gb-accordion-text"><!-- wp:paragraph -->
 <p>Our team has a combined experience of over 60 years.</p>
 <!-- /wp:paragraph --></div></details></div>
-<!-- /wp:atomic-blocks/ab-accordion -->
+<!-- /wp:genesis-blocks/gb-accordion -->
 
-<!-- wp:atomic-blocks/ab-accordion -->
-<div class="wp-block-atomic-blocks-ab-accordion ab-block-accordion ab-font-size-18"><details><summary class="ab-accordion-title">What is your return policy?</summary><div class="ab-accordion-text"><!-- wp:paragraph -->
+<!-- wp:genesis-blocks/gb-accordion -->
+<div class="wp-block-genesis-blocks-gb-accordion gb-block-accordion gb-font-size-18"><details><summary class="gb-accordion-title">What is your return policy?</summary><div class="gb-accordion-text"><!-- wp:paragraph -->
 <p>We offer a 30-day return policy for all unused items. For more information, please view our terms of service.</p>
 <!-- /wp:paragraph --></div></details></div>
-<!-- /wp:atomic-blocks/ab-accordion --></div>
+<!-- /wp:genesis-blocks/gb-accordion --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
