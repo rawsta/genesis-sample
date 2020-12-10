@@ -60,7 +60,7 @@ return [
 			],
 		],
 		'contact' => [
-			'post_title'     => 'Contact Us',
+			'post_title'     => 'Schreiben Sie uns',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',

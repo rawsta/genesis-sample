@@ -37,17 +37,14 @@ require_once get_stylesheet_directory() . '/lib/customize.php';
 // Includes Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/output.php';
 
-// Let's add some branding.
-require_once get_stylesheet_directory() . '/lib/branding.php';
-
 // Adds WooCommerce support.
-// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
 
 // Adds the required WooCommerce styles and Customizer CSS.
-// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
 
 // Adds the Genesis Connect WooCommerce notice.
-// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 
 //TODO: dont start the engine
@@ -163,7 +160,7 @@ function raw_child_custom_sizes( $sizes ) {
 	return array_merge(
 		$sizes,
 		[
-			'sidebar-featured'        => __( 'Sidebar', 'raw-child'  ),
+			'sidebar-featured'   => __( 'Sidebar', 'raw-child'  ),
 			'raw-squared'        => __( 'Squared', 'raw-child'  ),
 			'raw-post-images'    => __( 'Post Image', 'raw-child'  ),
 			'raw-homepage-thumb' => __( 'Homepage Thumb', 'raw-child'  ),
