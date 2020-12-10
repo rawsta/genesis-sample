@@ -120,11 +120,7 @@ return <<<CONTENT
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":308} -->
-<<<<<<< HEAD
 <figure class="wp-block-image"><img src="$raw_child_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
-=======
-<figure class="wp-block-image"><img src="$genesis_sample_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
->>>>>>> 063fef9c16d31734ab1dd7a759485abdb3a0661a
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

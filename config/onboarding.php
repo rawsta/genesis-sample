@@ -26,7 +26,7 @@ return [
 				'content'          => array_merge(
 					[
 						'homepage' => [
-							'post_title'     => 'Homepage',
+							'post_title'     => 'Startseite',
 							'post_content'   => require dirname( __FILE__ ) . '/import/content/home-black-white.php',
 							'post_type'      => 'page',
 							'post_status'    => 'publish',
@@ -58,7 +58,7 @@ return [
 				'content'          => array_merge(
 					[
 						'homepage' => [
-							'post_title'     => 'Homepage',
+							'post_title'     => 'Start',
 							'post_content'   => require dirname( __FILE__ ) . '/import/content/home-color.php',
 							'post_type'      => 'page',
 							'post_status'    => 'publish',

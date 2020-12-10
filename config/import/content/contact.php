@@ -13,8 +13,6 @@
  *  @link    https://github.com/rawsta/raw-child/
  */
 
-// Requires helper WPForms function to create a new form.
-require_once get_stylesheet_directory() . '/lib/wpforms.php';
 
 // Swaps the default content below with a WPForms contact form block if the WPForms plugin is active.
 add_action( 'genesis_onboarding_after_import_content', 'rawsta_insert_contact_form', 10, 2 );
