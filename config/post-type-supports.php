@@ -7,7 +7,7 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://my.rawsta.com/themes/raw-child/
+ * @link    https://github.com/rawsta/raw-child/
  */
 
 return [

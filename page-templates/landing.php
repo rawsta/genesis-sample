@@ -9,7 +9,7 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.rawsta.de/
+ *  @link    https://github.com/rawsta/raw-child/
  */
 
 add_filter( 'body_class', 'raw_child_landing_body_class' );

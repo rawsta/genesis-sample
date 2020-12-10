@@ -3,7 +3,7 @@
 GitHub project link: https://github.com/rawsta/raw-child/.
 forked from https://github.com/studiopress/genesis-sample
 
-This is mainly my own Starter-theme for Genesis-based Websites but everyone is welcome to use it.
+This is mainly my own Starter-theme for Genesis-based Websites but everyone is welcome to use it. It doesn't stray to far away from the original genesis-sample and is more a compilation of the usual tweaks and setup steps i tend to use on new projects.
 
 Feedback always appreciated.
 
@@ -44,6 +44,7 @@ You can then type any of these commands:
 - `npm run lint:js` to generate a report of style violations for JavaScript files.
 - `npm run fix:js` to fix any JavaScript style violations that can be corrected automatically.
 - `npm run zip` to create a raw-child.zip. Files in the `excludes` array in `scripts/makezip.js` are omitted.
+- `genesis-theme-claim` change the child-theme claim and title [genesis-theme-claim](https://www.npmjs.com/package/genesis-theme-claim).
 
 ### Packaging for distribution
 

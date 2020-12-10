@@ -7,7 +7,7 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.rawsta.de/
+ *  @link    https://github.com/rawsta/raw-child/
  */
 
 $raw_child_shared_content = genesis_get_config( 'onboarding-shared' );

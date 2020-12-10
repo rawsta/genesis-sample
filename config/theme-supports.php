@@ -7,13 +7,13 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://my.rawsta.com/themes/raw-child/
+ * @link    https://github.com/rawsta/raw-child/
  */
 
 return [
 	'genesis-custom-logo'             => [
-		'height'      => 120,
-		'width'       => 700,
+		'height'      => 100,
+		'width'       => 640,
 		'flex-height' => true,
 		'flex-width'  => true,
 	],
@@ -34,7 +34,7 @@ return [
 		'skip-links',
 	],
 	'genesis-after-entry-widget-area' => '',
-	'genesis-footer-widgets'          => 3,
+	'genesis-footer-widgets'          => 3, // up to 6
 	'genesis-menus'                   => [
 		'primary'   => __( 'Header Menu', 'raw-child' ),
 		'secondary' => __( 'Footer Menu', 'raw-child' ),

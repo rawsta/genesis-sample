@@ -10,7 +10,7 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.rawsta.de/
+ *  @link    https://github.com/rawsta/raw-child/
  */
 
 // Requires helper WPForms function to create a new form.

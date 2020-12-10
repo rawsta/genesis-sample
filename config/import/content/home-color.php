@@ -7,7 +7,7 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.rawsta.de/
+ *  @link    https://github.com/rawsta/raw-child/
  */
 
 // Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.

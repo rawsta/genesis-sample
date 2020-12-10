@@ -10,15 +10,15 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.rawsta.de/
+ *  @link    https://github.com/rawsta/raw-child/
  */
 
 return [
 	'plugins'          => [
 		[
-			'name'       => __( 'Genesis Blocks', 'genesis-sample' ),
+			'name'       => __( 'Genesis Blocks', 'raw-child' ),
 			'slug'       => 'genesis-blocks/genesis-blocks.php',
-			'public_url' => 'https://wpeng.in/genesis-blocks/',
+			'public_url' => 'https://wordpress.org/plugins/genesis-blocks/',
 		],
 		[
 			'name'       => __( 'Simple Social Icons', 'raw-child' ),
@@ -26,19 +26,19 @@ return [
 			'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
 		],
 		[
-			'name'       => __( 'Genesis eNews Extended (Third Party)', 'raw-child' ),
-			'slug'       => 'genesis-enews-extended/plugin.php',
-			'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
+			'name'       => __( 'Antispam Bee (Third Party)', 'raw-child' ),
+			'slug'       => 'antispam-bee/antispam_bee.php',
+			'public_url' => 'https://wordpress.org/plugins/antispam-bee/',
 		],
 		[
-			'name'       => __( 'WPForms Lite (Third Party)', 'raw-child' ),
-			'slug'       => 'wpforms-lite/wpforms.php',
-			'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
+			'name'       => __( 'Contact Form 7 (Third Party)', 'raw-child' ),
+			'slug'       => 'contact-form-7/wp-contact-form-7.php',
+			'public_url' => 'https://wordpress.org/plugins/contact-form-7/',
 		],
 	],
 	'content'          => [
 		'blocks'  => [
-			'post_title'     => 'Block Content Examples',
+			'post_title'     => 'Block Beispiele',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
@@ -47,7 +47,7 @@ return [
 			'meta_input'     => [ '_genesis_layout' => 'full-width-content' ],
 		],
 		'about'   => [
-			'post_title'     => 'About Us',
+			'post_title'     => '&Uuml;ber uns',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
@@ -85,19 +85,19 @@ return [
 	'navigation_menus' => [
 		'primary' => [
 			'homepage' => [
-				'title' => 'Home',
+				'title' => 'Start',
 			],
 			'about'    => [
-				'title' => 'About Us',
-			],
-			'contact'  => [
-				'title' => 'Contact Us',
+				'title' => '&Uuml;ber Uns',
 			],
 			'blocks'   => [
-				'title' => 'Block Examples',
+				'title' => 'Block Beispiele',
 			],
 			'landing'  => [
 				'title' => 'Landing Page',
+			],
+			'contact'  => [
+				'title' => 'Kontakt',
 			],
 		],
 	],
@@ -128,7 +128,7 @@ return [
 			[
 				'type' => 'text',
 				'args' => [
-					'title'  => 'Strategy',
+					'title'  => 'Strategie',
 					'text'   => '<p>We help creative entrepreneurs build their digital business by focusing on three key elements of a successful online platform.</p><p><a href="#">Learn more about strategy</a>.</p>',
 					'filter' => 1,
 					'visual' => 1,

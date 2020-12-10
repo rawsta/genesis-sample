@@ -7,7 +7,7 @@
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
- * @link    https://www.rawsta.de/
+ *  @link    https://github.com/rawsta/raw-child/
  */
 
 add_action( 'admin_print_styles', 'raw_child_remove_woocommerce_notice' );
