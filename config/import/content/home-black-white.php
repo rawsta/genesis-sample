@@ -10,8 +10,8 @@
  *  @link    https://github.com/rawsta/raw-child/
  */
 
-// Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.
-$raw_child_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
+// Photo by someone unknown (let me know if you know more)
+$raw_child_homepage_header_image_url = CHILD_URL . '/config/import/images/rooftops-bw.jpg';
 
 // Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
 $raw_child_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
@@ -19,11 +19,11 @@ $raw_child_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-abou
 return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1477,"mediaType":"image","isStackedOnMobile":true} -->
 <div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$raw_child_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
-<h1>We'll teach you how to build and grow an online business.</h1>
+<h1>We'll teach you how to build and grow a city</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>All the resources, training, and support you need to run your dream online business! </p>
+<p>All the resources, training, and support you need to run your dream cityscape! </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:button {"textColor":"light-gray","className":"is-style-default"} -->
@@ -35,7 +35,7 @@ return <<<CONTENT
 
 <!-- wp:genesis-blocks/gb-container {"containerPaddingTop":4.5,"containerWidth":"full","containerBackgroundColor":"#333"} -->
 <div style="background-color:#333;padding-left:0%;padding-right:0%;padding-bottom:0%;padding-top:4.5%;margin-top:0%;margin-bottom:0%" class="wp-block-genesis-blocks-gb-container alignfull gb-block-container"><div class="gb-container-inside"><div class="gb-container-content" style="max-width:1600px"><!-- wp:genesis-blocks/gb-cta {"buttonText":"Get Started Today","buttonBackgroundColor":"#0072e5","ctaBackgroundColor":"#333333","ctaTextColor":"#f5f5f5"} -->
-<div style="background-color:#333333;text-align:center" class="wp-block-genesis-blocks-gb-cta gb-block-cta"><div class="gb-cta-content"><h2 class="gb-cta-title gb-font-size-32" style="color:#f5f5f5">Ready to take your next step?</h2><div class="gb-cta-text gb-font-size-32" style="color:#f5f5f5"><p>Grow your audience and build a profitable online business.</p></div></div><div class="gb-cta-button"><a href="#" target="_self" class="gb-button gb-button-shape-rounded gb-button-size-medium" style="color:#ffffff;background-color:#0072e5">Get Started Today</a></div></div>
+<div style="background-color:#333333;text-align:center" class="wp-block-genesis-blocks-gb-cta gb-block-cta"><div class="gb-cta-content"><h2 class="gb-cta-title gb-font-size-32" style="color:#f5f5f5">Ready to take your next step?</h2><div class="gb-cta-text gb-font-size-32" style="color:#f5f5f5"><p>Grow your audience and build a profitable City.</p></div></div><div class="gb-cta-button"><a href="#" target="_self" class="gb-button gb-button-shape-rounded gb-button-size-medium" style="color:#ffffff;background-color:#0072e5">Get Started Today</a></div></div>
 <!-- /wp:genesis-blocks/gb-cta -->
 
 </div></div></div>
@@ -87,7 +87,7 @@ return <<<CONTENT
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:button {"customTextColor":"#f5f5f5","align":"right","className":"is-style-outline"} -->
-<div class="wp-block-button alignright is-style-outline home-contact"><a class="wp-block-button__link has-text-color" href="#" style="color:#f5f5f5">Get in touch</a></div>
+<div class="wp-block-button alignright is-style-outline home-contact"><a class="wp-block-button__link has-text-color" href="#" style="color:#f5f5f5">Get the touch</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div></div>
@@ -101,19 +101,19 @@ return <<<CONTENT
 <div class="wp-block-columns alignwide has-2-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:genesis-blocks/gb-accordion {"accordionOpen":true} -->
 <div class="wp-block-genesis-blocks-gb-accordion gb-block-accordion gb-font-size-18"><details open><summary class="gb-accordion-title">Can I phone or email you?</summary><div class="gb-accordion-text"><!-- wp:paragraph -->
-<p>You can reach us on our <a href="#">contact page</a> or by calling us at 1.123.456.7891</p>
+<p>You can reach us on our <a href="#">contact page</a> or by calling us at 1</p>
 <!-- /wp:paragraph --></div></details></div>
 <!-- /wp:genesis-blocks/gb-accordion -->
 
 <!-- wp:genesis-blocks/gb-accordion -->
 <div class="wp-block-genesis-blocks-gb-accordion gb-block-accordion gb-font-size-18"><details><summary class="gb-accordion-title">How long have you been in business?</summary><div class="gb-accordion-text"><!-- wp:paragraph -->
-<p>Our team has a combined experience of over 60 years.</p>
+<p>Our team has a combined experience of over 0.1 years.</p>
 <!-- /wp:paragraph --></div></details></div>
 <!-- /wp:genesis-blocks/gb-accordion -->
 
 <!-- wp:genesis-blocks/gb-accordion -->
 <div class="wp-block-genesis-blocks-gb-accordion gb-block-accordion gb-font-size-18"><details><summary class="gb-accordion-title">What is your return policy?</summary><div class="gb-accordion-text"><!-- wp:paragraph -->
-<p>We offer a 30-day return policy for all unused items. For more information, please view our terms of service.</p>
+<p>We offer a 3-second return policy for all unused items. For more information, please view our terms of service.</p>
 <!-- /wp:paragraph --></div></details></div>
 <!-- /wp:genesis-blocks/gb-accordion --></div>
 <!-- /wp:column -->

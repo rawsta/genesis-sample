@@ -14,7 +14,7 @@
 
 return <<<CONTENT
 <!-- wp:paragraph -->
-<p>Below are examples of column classes that are available in the block editor.</p>
+<p>Below are first examples of column classes that are available in the block editor.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"align":"left"} -->

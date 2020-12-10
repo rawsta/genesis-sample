@@ -27,7 +27,7 @@ return <<<CONTENT
 <!-- wp:columns -->
 <div class="wp-block-columns has-2-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Hello! We are rawsta, and  we build themes with an emphasis on typography, white space, and   mobile-optimized design to make your website look absolutely   breathtaking.  </p>
+<p>Hello! We are rawsta, and  we build stuff with an emphasis on things, space, and mobile design to make your stuff look absolutely breathtaking.  </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -42,7 +42,7 @@ return <<<CONTENT
 
 <!-- wp:paragraph {"align":"right"} -->
 <p style="text-align:right">
-1234 Block Blvd.<br>San Francisco, CA 94120
+1234 Block Blvd.<br>Beverly Hills, CA 90210
 
 </p>
 <!-- /wp:paragraph --></div>

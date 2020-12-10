@@ -21,6 +21,9 @@ add_action( 'genesis_onboarding_after_import_content', 'rawsta_insert_contact_fo
 
 return <<<CONTENT
 <!-- wp:paragraph -->
-<p>Add a contact form to this page with the WPForms Lite plugin (Third Party). Learn <a href="https://my.rawsta.com/documentation/wpforms/plugin-usage/create-contact-forms-with-wpforms/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">how to create a form using WPForms</a>.</p>
+<p>Add a contact form to this page with the WPForms Lite plugin (Third Party). Learn <a href="https://my.studiopress.com/documentation/wpforms/plugin-usage/create-contact-forms-with-wpforms/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">how to create a form using WPForms</a>.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>But of course, you've got Contact Form 7 installed, so it's much easier :).</p>
 <!-- /wp:paragraph -->
 CONTENT;
