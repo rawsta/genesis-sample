@@ -45,7 +45,7 @@ require_once get_stylesheet_directory() . '/lib/output.php';
 require_once get_stylesheet_directory() . '/lib/structure.php';
 
 // Modifying Posts and Pages.
-require_once get_stylesheet_directory() . '/lib/posts-pages.php';
+require_once get_stylesheet_directory() . '/lib/post-pages.php';
 
 // Customize comments.
 require_once get_stylesheet_directory() . '/lib/comments.php';
