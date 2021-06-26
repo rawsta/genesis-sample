@@ -102,6 +102,9 @@ add_theme_support( 'custom-line-height' );
 // Add support for custom units.
 add_theme_support( 'custom-units' );
 
+// Add support for custom background.
+add_theme_support( 'custom-background' );
+
 $raw_child_appearance = genesis_get_config( 'appearance' );
 
 // Adds support for editor font sizes.
