@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress Cleanup
+ * WordPress Cleanup and speedup
  *
  * @package      Raw Child
  * @author       Sebastian Fiele
@@ -9,6 +9,31 @@
  * @license      GPL-2.0+
 **/
 
+add_filter('style_loader_tag', 'sinus_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'sinus_remove_type_attr', 10, 2);
+/**
+ * Remove obsolete 'type=...' from script/style tags.
+ *
+ * @param string $tag All script tags.
+ */
+function sinus_remove_type_attr($tag, $handle) {
+    return preg_replace('/ type=[\'"]text\/(javascript|css)[\'"]/', '', $tag );
+}
+
+add_filter( 'script_loader_tag', 'js_defer_attr', 10 );
+/**
+ * Function to add defer to all scripts
+ *
+ * @param string $tag All script tags.
+ */
+function js_defer_attr( $tag ) {
+	// Add async to all remaining scripts.
+	if ( ! is_admin() ) {
+		return str_replace( ' src', ' defer="defer" src', $tag );
+	} else {
+		return $tag;
+	}
+}
 
 add_filter( 'wp_default_scripts', 'raw_child_dequeue_jquery_migrate' );
 /**
