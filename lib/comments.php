@@ -77,3 +77,23 @@ function raw_child_comment_form_button_class( $args ) {
 	$args['class_submit'] = 'submit wp-block-button__link';
 	return $args;
 }
+
+/**
+ * Move Comments below Content (+Sidebar)
+ *
+ * Reposition author box, after entry widget area,
+ * adjacent entry navigation and comments from after entry
+ * to after content on single posts
+ *
+ */
+remove_action( 'genesis_after_entry', 'genesis_do_author_box_single', 8 );
+add_action( 'genesis_after_content_sidebar_wrap', 'genesis_do_author_box_single' );
+
+remove_action( 'genesis_after_entry', 'genesis_after_entry_widget_area' );
+add_action( 'genesis_after_content_sidebar_wrap', 'genesis_after_entry_widget_area' );
+
+remove_action( 'genesis_after_entry', 'genesis_adjacent_entry_nav' );
+add_action( 'genesis_after_content_sidebar_wrap', 'genesis_adjacent_entry_nav' );
+
+remove_action( 'genesis_after_entry', 'genesis_get_comments_template' );
+add_action( 'genesis_after_content_sidebar_wrap', 'genesis_get_comments_template' );
