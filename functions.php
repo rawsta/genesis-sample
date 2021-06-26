@@ -15,7 +15,7 @@ define( 'CHILD_THEME_NAME', 'Raw Child' );
 define( 'CHILD_THEME_URL', 'https://rawsta.de/' );
 define( 'CHILD_THEME_VERSION', '3.4.1' );
 
-//TODO: dont start the engine
+// TODO: dont start the engine
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
@@ -112,7 +112,7 @@ function raw_child_enqueue_scripts_styles() {
 	wp_enqueue_script(
 		genesis_get_theme_handle() . '-js',
 		get_stylesheet_directory_uri() . '/js/rawchild.js',
-		array( 'jquery' ),
+		[ 'jquery' ],
 		genesis_get_theme_version(),
 		true
 	);
@@ -177,11 +177,11 @@ function raw_child_custom_sizes( $sizes ) {
 	return array_merge(
 		$sizes,
 		[
-			'sidebar-featured'   => __( 'Sidebar', 'raw-child'  ),
-			'raw-squared'        => __( 'Squared', 'raw-child'  ),
-			'raw-post-images'    => __( 'Post Image', 'raw-child'  ),
-			'raw-homepage-thumb' => __( 'Homepage Thumb', 'raw-child'  ),
-			'raw-singlepost'     => __( 'Singlepost', 'raw-child'  ),
+			'sidebar-featured'   => __( 'Sidebar', 'raw-child' ),
+			'raw-squared'        => __( 'Squared', 'raw-child' ),
+			'raw-post-images'    => __( 'Post Image', 'raw-child' ),
+			'raw-homepage-thumb' => __( 'Homepage Thumb', 'raw-child' ),
+			'raw-singlepost'     => __( 'Singlepost', 'raw-child' ),
 		]
 	);
 }

@@ -2,21 +2,17 @@
 /**
  * Raw Child.
  *
- *
  * @package Raw Child
  * @author  rawsta
  * @license GPL-2.0-or-later
  *  @link    https://github.com/rawsta/raw-child/
  */
 
-add_action('wp_footer','header_sticky_script');
+add_action( 'wp_footer', 'header_sticky_script' );
 /**
  * Hide Header on Scroll Down but Show when Scroll Up
- *
  */
-function header_sticky_script()
-{
-?>
+function header_sticky_script() {   ?>
 	<script>
 		var didScroll;
 		var lastScrollTop = 0;
@@ -66,5 +62,5 @@ function header_sticky_script()
 			lastScrollTop = st;
 		}
 	</script>
-<?php
+	<?php
 }

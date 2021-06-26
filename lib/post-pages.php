@@ -11,14 +11,14 @@
  */
 
  /**
- * Apply Content Sidebar content layout to single posts.
- *
- * @return string layout ID.
- */
+  * Apply Content Sidebar content layout to single posts.
+  *
+  * @return string layout ID.
+  */
 function raw_child_set_single_posts_layout() {
-    if ( is_single() ) {
-        return 'content-sidebar';
-    }
+	if ( is_single() ) {
+		return 'content-sidebar';
+	}
 }
 add_filter( 'genesis_pre_get_option_site_layout', 'raw_child_set_single_posts_layout' );
 
@@ -38,16 +38,16 @@ add_filter(
  *  Get First Image and set it as featured image
  */
 // function raw_child_autoset_featured() {
-//     global $post;
-//     $already_has_thumb = has_post_thumbnail($post->ID);
-//     if (!$already_has_thumb)  {
-//         $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
-//         if ($attached_image) {
-//             foreach ($attached_image as $attachment_id => $attachment) {
-//                 set_post_thumbnail($post->ID, $attachment_id);
-//             }
-//         }
-//     }
+// global $post;
+// $already_has_thumb = has_post_thumbnail($post->ID);
+// if (!$already_has_thumb)  {
+// $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
+// if ($attached_image) {
+// foreach ($attached_image as $attachment_id => $attachment) {
+// set_post_thumbnail($post->ID, $attachment_id);
+// }
+// }
+// }
 // }
 // add_action('the_post', 'raw_child_autoset_featured');
 // add_action('save_post', 'raw_child_autoset_featured');

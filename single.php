@@ -17,7 +17,6 @@ add_action( 'genesis_entry_header', 'raw_child_entry_header_share', 13 );
 
 /**
  * Entry header share
- *
  */
 function raw_child_entry_header_share() {
 	do_action( 'raw_child_entry_header_share' );
@@ -25,7 +24,6 @@ function raw_child_entry_header_share() {
 
 /**
  * After Entry
- *
  */
 function raw_child_single_after_entry() {
 	echo '<div class="after-entry">';

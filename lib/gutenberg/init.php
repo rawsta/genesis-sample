@@ -114,7 +114,6 @@ add_theme_support(
 );
 // Disable Custom FontSize Selection.
 // * add_theme_support( 'disable-custom-font-sizes' );
-
 // Adds support for editor color palette.
 add_theme_support(
 	'editor-color-palette',
@@ -122,8 +121,6 @@ add_theme_support(
 );
 // Disable Custom Color Selection.
 // * add_theme_support( 'disable-custom-colors' );
-
-
 require_once get_stylesheet_directory() . '/lib/gutenberg/inline-styles.php';
 
 add_action( 'after_setup_theme', 'raw_child_content_width', 0 );

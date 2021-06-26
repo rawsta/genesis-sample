@@ -17,12 +17,12 @@ return [
 		'menuIconClass'     => 'dashicons-before dashicons-menu',
 		'subMenu'           => __( 'Submenu', 'raw-child' ),
 		'subMenuIconsClass' => 'dashicons-before dashicons-arrow-down-alt2',
-		'menuClasses' => [
+		'menuClasses'       => [
 			'combine' => [
 				'.nav-primary',
 				'.nav-header',
 			],
-			'others' => [],
+			'others'  => [],
 		],
 	],
 	'extras' => [

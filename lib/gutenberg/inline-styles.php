@@ -39,10 +39,10 @@ function raw_child_custom_gutenberg_css() {
 }
 CSS;
 
-$css .= raw_child_inline_font_sizes();
-$css .= raw_child_inline_color_palette();
+	$css .= raw_child_inline_font_sizes();
+	$css .= raw_child_inline_color_palette();
 
-wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg', $css );
+	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg', $css );
 
 }
 

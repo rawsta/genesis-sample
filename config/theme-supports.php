@@ -41,7 +41,7 @@ return [
 		'rems',
 		'search-form',
 		'skip-links',
-		'screen-reader-text'
+		'screen-reader-text',
 	],
 	'genesis-after-entry-widget-area' => '',
 	'genesis-responsive-viewport'     => '',

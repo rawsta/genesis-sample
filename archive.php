@@ -15,7 +15,6 @@ add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_c
 
 /**
  * Blog Archive Body Class
- *
  */
 function raw_child_blog_archive_body_class( $classes ) {
 	$classes[] = 'archive';
@@ -28,7 +27,7 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_archive_title_descriptions', 'genesis_do_breadcrumbs', 8 );
 
 // Remove description on paginated archives
-if( get_query_var( 'paged' ) ) {
+if ( get_query_var( 'paged' ) ) {
 	remove_action( 'genesis_archive_title_descriptions', 'genesis_do_archive_headings_intro_text', 12, 3 );
 }
 
