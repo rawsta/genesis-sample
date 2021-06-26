@@ -10,6 +10,11 @@
  * @link    https://github.com/rawsta/raw-child/
  */
 
+// Child theme (do not remove).
+define( 'CHILD_THEME_NAME', 'Raw Child' );
+define( 'CHILD_THEME_URL', 'https://rawsta.de/' );
+define( 'CHILD_THEME_VERSION', '3.4.1' );
+
 //TODO: dont start the engine
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
