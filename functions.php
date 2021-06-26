@@ -10,6 +10,7 @@
  * @link    https://github.com/rawsta/raw-child/
  */
 
+//TODO: dont start the engine
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
@@ -31,11 +32,23 @@ function raw_child_localization_setup() {
 // Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
+// Customize the backend to fit the branding.
+require_once get_stylesheet_directory() . '/lib/branding.php';
+
 // Adds image upload and color select to Customizer.
 require_once get_stylesheet_directory() . '/lib/customize.php';
 
 // Includes Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/output.php';
+
+// Modifying general structure.
+require_once get_stylesheet_directory() . '/lib/structure.php';
+
+// Modifying Posts and Pages.
+require_once get_stylesheet_directory() . '/lib/posts-pages.php';
+
+// Customize comments.
+require_once get_stylesheet_directory() . '/lib/comments.php';
 
 // Adds WooCommerce support.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
@@ -47,7 +60,6 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 
-//TODO: dont start the engine
 add_action( 'after_setup_theme', 'raw_child_gutenberg_support' );
 /**
  * Adds Gutenberg opt-in features and styling.
@@ -206,35 +218,3 @@ function raw_child_secondary_menu_args( $args ) {
 	return $args;
 
 }
-
-add_filter( 'genesis_author_box_gravatar_size', 'raw_child_author_box_gravatar' );
-/**
- * Modifies size of the Gravatar in the author box.
- *
- * @since 1.0.0
- *
- * @param int $size Original icon size.
- * @return int Modified icon size.
- */
-function raw_child_author_box_gravatar( $size ) {
-
-	return 90;
-
-}
-
-add_filter( 'genesis_comment_list_args', 'raw_child_comments_gravatar' );
-/**
- * Modifies size of the Gravatar in the entry comments.
- *
- * @since 1.0.0
- *
- * @param array $args Gravatar settings.
- * @return array Gravatar settings with modified size.
- */
-function raw_child_comments_gravatar( $args ) {
-
-	$args['avatar_size'] = 60;
-	return $args;
-
-}
-

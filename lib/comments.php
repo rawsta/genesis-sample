@@ -53,6 +53,22 @@ function raw_child_staff_comment_class( $classes, $class, $comment_id, $comment,
 	return $classes;
 }
 
+add_filter( 'comment_form_defaults', 'raw_child_comment_text' );
+/**
+ * Change the comment area text
+ *
+ * @since  1.0.0
+ * @param  array $args
+ * @return array
+ */
+function raw_child_comment_text( $args ) {
+	$args['title_reply']          = __( 'Leave A Reply', 'raw_child_genesis_child' );
+	$args['label_submit']         = __( 'Post Comment',  'raw_child_genesis_child' );
+	$args['comment_notes_before'] = '';
+	$args['comment_notes_after']  = '';
+	return $args;
+}
+
 add_filter( 'comment_form_defaults', 'raw_child_comment_form_button_class' );
 /**
  * Comment form, button class

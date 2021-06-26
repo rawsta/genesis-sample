@@ -27,13 +27,24 @@ return [
 		'script',
 		'style',
 	],
+	'genesis-structural-wraps'        => [
+		'header',
+		'menu-secondary',
+		'site-inner',
+		'footer-widgets',
+		'footer',
+	],
 	'genesis-accessibility'           => [
+		'404-page',
 		'drop-down-menu',
 		'headings',
+		'rems',
 		'search-form',
 		'skip-links',
+		'screen-reader-text'
 	],
 	'genesis-after-entry-widget-area' => '',
+	'genesis-responsive-viewport'     => '',
 	'genesis-footer-widgets'          => 3, // up to 6
 	'genesis-menus'                   => [
 		'primary'   => __( 'Header Menu', 'raw-child' ),

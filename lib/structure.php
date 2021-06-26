@@ -10,41 +10,18 @@
  *  @link    https://github.com/rawsta/raw-child/
  */
 
+add_filter( 'template_include', 'raw_child_template_hierarchy' );
 /**
- * Adds body classes to help with block styling.
+ * Template Hierarchy
  *
- * - `has-no-blocks` if content contains no blocks.
- * - `first-block-[block-name]` to allow changes based on the first block (such as removing padding above a Cover block).
- * - `first-block-align-[alignment]` to allow styling adjustment if the first block is wide or full-width.
- *
- * @since 0.9.0.6
- *
- * @param array $classes The original classes.
- * @return array The modified classes.
  */
-function raw_child_blocks_body_classes( $classes ) {
-
-	if ( ! is_singular() || ! function_exists( 'has_blocks' ) || ! function_exists( 'parse_blocks' ) ) {
-		return $classes;
-	}
-
-	$post_object = get_post( get_the_ID() );
-	$blocks      = (array) parse_blocks( $post_object->post_content );
-
-	if ( $blocks[0]['blockName'] === 'core/cover' && $blocks[0]['attrs']['align'] === 'full' ) {
-		$classes[] = 'first-block-cover-full';
-	}
-
-	if ( $blocks[0]['attrs']['align'] === 'full' ) {
-		$classes[] = 'first-block-align-full';
-	}
-
-	return $classes;
-
+function raw_child_template_hierarchy( $template ) {
+	if( is_home() )
+		$template = get_query_template( 'archive' );
+	return $template;
 }
-add_filter( 'body_class', 'raw_child_blocks_body_classes' );
 
-
+add_action( 'template_redirect', 'raw_child_use_archive_loop', 20 );
 /**
  * Use Archive Loop
  *
@@ -56,7 +33,6 @@ function raw_child_use_archive_loop() {
 		remove_action( 'genesis_loop', 'genesis_do_loop' );
 	}
 }
-add_action( 'template_redirect', 'raw_child_use_archive_loop', 20 );
 
 /**
  * Archive Loop
@@ -80,6 +56,7 @@ function raw_child_archive_loop() {
 	}
 }
 
+add_action( 'genesis_before_entry', 'raw_child_remove_entry_title' );
 /**
  * Remove entry-title if h1 block used
  * @link https://www.billerickson.net/building-a-header-block-in-wordpress/
@@ -103,8 +80,8 @@ function raw_child_remove_entry_title() {
 		remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
 	}
 }
-add_action( 'genesis_before_entry', 'raw_child_remove_entry_title' );
 
+add_filter( 'genesis_attr_content', 'raw_child_change_content' );
 /**
  * Change '.content' to '.site-main'
  *
@@ -116,8 +93,8 @@ function raw_child_change_content( $attributes ) {
 	$attributes['class'] = 'site-main';
 	return $attributes;
 }
-add_filter( 'genesis_attr_content', 'raw_child_change_content' );
 
+add_filter( 'genesis_attr_site-inner', 'raw_child_site_inner_id' );
 /**
  * Add #main-content to .site-inner
  *
@@ -126,8 +103,8 @@ function raw_child_site_inner_id( $attributes ) {
 	$attributes['id'] = 'main-content';
 	return $attributes;
 }
-add_filter( 'genesis_attr_site-inner', 'raw_child_site_inner_id' );
 
+add_filter( 'genesis_attr_site-inner', 'raw_child_site_inner_no_padding' );
 /**
  * Remove padding from .site-inner
  *
@@ -136,8 +113,8 @@ function raw_child_site_inner_no_padding( $attributes ) {
 	$attributes['class'] .= ' full';
 	return $attributes;
 }
-//add_filter( 'genesis_attr_site-inner', 'raw_child_site_inner_no_padding' );
 
+add_filter( 'genesis_skip_links_output', 'raw_child_main_content_skip_link' );
 /**
  * Change skip link to #main-content
  *
@@ -155,7 +132,6 @@ function raw_child_main_content_skip_link( $skip_links ) {
 
 	return $skip_links;
 }
-add_filter( 'genesis_skip_links_output', 'raw_child_main_content_skip_link' );
 
 /**
  * Archive Description markup
