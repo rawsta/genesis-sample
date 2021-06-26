@@ -12,9 +12,10 @@
 
 return [
 	'post' => [
-		'genesis-singular-images',
+		'genesis-singular-images', // add featured images
 	],
 	'page' => [
-		'genesis-singular-images',
+		'genesis-singular-images', // add featured images
+		'excerpt', // let pages have excerpts
 	],
 ];
