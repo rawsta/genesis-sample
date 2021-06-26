@@ -9,6 +9,8 @@
  * @license      GPL-2.0+
 **/
 
+
+add_filter( 'wp_default_scripts', 'raw_child_dequeue_jquery_migrate' );
 /**
  * Dequeue jQuery Migrate
  * we don't need it anymore
@@ -20,7 +22,8 @@ function raw_child_dequeue_jquery_migrate( &$scripts ){
         $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
     }
 }
-add_filter( 'wp_default_scripts', 'raw_child_dequeue_jquery_migrate' );
+
+add_filter( 'nav_menu_css_class', 'raw_child_clean_nav_menu_classes', 5 );
 /**
  * Clean Nav Menu Classes
  *
@@ -51,7 +54,8 @@ function raw_child_clean_nav_menu_classes( $classes ) {
     }
     return $classes;
 }
-add_filter( 'nav_menu_css_class', 'raw_child_clean_nav_menu_classes', 5 );
+
+add_filter( 'post_class', 'raw_child_clean_post_classes', 5 );
 /**
  * Clean Post Classes
  *
@@ -65,7 +69,8 @@ function raw_child_clean_post_classes( $classes ) {
     );
     return array_intersect( $classes, $allowed_classes );
 }
-add_filter( 'post_class', 'raw_child_clean_post_classes', 5 );
+
+add_filter( 'comment_class', 'raw_child_staff_comment_class', 10, 5 );
 /**
  * Staff comment class
  *
@@ -80,7 +85,8 @@ function raw_child_staff_comment_class( $classes, $class, $comment_id, $comment,
         $classes[] = 'staff';
     return $classes;
 }
-add_filter( 'comment_class', 'raw_child_staff_comment_class', 10, 5 );
+
+add_filter( 'get_avatar', 'raw_child_remove_avatars_from_comments' );
 /**
  * Remove avatars from comment list
  *
@@ -89,7 +95,8 @@ function raw_child_remove_avatars_from_comments( $avatar ) {
     global $in_comment_loop;
     return $in_comment_loop ? '' : $avatar;
 }
-add_filter( 'get_avatar', 'raw_child_remove_avatars_from_comments' );
+
+add_filter( 'comment_form_defaults', 'raw_child_comment_form_button_class' );
 /**
  * Comment form, button class
  *
@@ -98,7 +105,8 @@ function raw_child_comment_form_button_class( $args ) {
     $args['class_submit'] = 'submit wp-block-button__link';
     return $args;
 }
-add_filter( 'comment_form_defaults', 'raw_child_comment_form_button_class' );
+
+add_filter( 'excerpt_more', 'raw_child_excerpt_more' );
 /**
  * Excerpt More
  *
@@ -106,4 +114,4 @@ add_filter( 'comment_form_defaults', 'raw_child_comment_form_button_class' );
 function raw_child_excerpt_more() {
     return '&hellip;';
 }
-add_filter( 'excerpt_more', 'raw_child_excerpt_more' );
+
