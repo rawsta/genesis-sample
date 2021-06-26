@@ -9,7 +9,9 @@
 **/
 
 
-
+/**
+ * Most of the Backend Branding was moved to the raw-core plugin.
+ */
 
 
 
