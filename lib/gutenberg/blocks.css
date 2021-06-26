@@ -51,6 +51,44 @@
 	--small-font-size: calc(var(--fontSize) * 0.7);
 	--tiny-font-size: calc(var(--fontSize) * 0.6);
 }
+/*
+:root {
+	--main-font: 'Inter', sans-serif;
+	--main-font-var: 'Inter var', sans-serif;
+	--head-font: 'Barlow', sans-serif;
+
+	--main-bg: #fff;
+	--font-color: #1c1c1c;
+	--font-color-alt: #35424c;
+
+	--text-bg: #ededed;
+	--block-bg: #efefef;
+	--light-grey: #dee5e8;
+	--medium-grey: #6f6f6f;
+	--medium-grey2: #585858;
+	--dark-grey: #506169;
+	--black: #000;
+
+	--theme-primary: #ff8300;
+	--theme-secondary: #830000;
+
+	--fontSize: calc(12px + 0.698vw);
+	--lineHeight: calc(var(--fontSize) * 1.4);
+	--letterSpacing: calc(var(--fontSize) * 0.0015);
+	--fontWeight: 300;
+
+	--main-font-size: 2rem;
+	--sub-font-size: calc(var(--fontSize) * 0.75);
+	--small-font-size: calc(var(--fontSize) * 0.7);
+	--tiny-font-size: calc(var(--fontSize) * 0.6);
+
+	--main-transition: all 350ms ease-in-out;
+
+	--border-radius: 2px;
+	--margin-bottom: 40px;
+
+} */
+
 
 /* Basic Styles
 ---------------------------------------------------------------------------- */

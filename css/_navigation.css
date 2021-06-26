@@ -16,8 +16,9 @@
 .genesis-nav-menu a {
 	color: var(--main-text);
 	display: block;
-	/* font-size: var(--sub-font-size);
-	font-weight: 400; */
+	font-size: var(--sub-font-size);
+	font-family: var(--head-font);
+	font-weight: 400;
 	outline-offset: -1px;
 	padding-bottom: 12px;
 	padding-top: 12px;
