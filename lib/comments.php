@@ -62,8 +62,8 @@ add_filter( 'comment_form_defaults', 'raw_child_comment_text' );
  * @return array
  */
 function raw_child_comment_text( $args ) {
-	$args['title_reply']          = __( 'Leave A Reply', 'raw_child_genesis_child' );
-	$args['label_submit']         = __( 'Post Comment',  'raw_child_genesis_child' );
+	$args['title_reply']          = __( 'Leave A Reply', 'raw-child' );
+	$args['label_submit']         = __( 'Post Comment',  'raw-child' );
 	$args['comment_notes_before'] = '';
 	$args['comment_notes_after']  = '';
 	return $args;

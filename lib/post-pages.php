@@ -27,7 +27,7 @@ add_filter(
 	'genesis_more_text',
 	function () {
 
-		$more_text = genesis_a11y_more_link( __( '[ Read More ]', 'imagagc' ) );
+		$more_text = genesis_a11y_more_link( __( '[ Read More ]', 'raw-child' ) );
 
 		return $more_text;
 
@@ -37,21 +37,21 @@ add_filter(
 /**
  *  Get First Image and set it as featured image
  */
-function raw_child_autoset_featured() {
-    global $post;
-    $already_has_thumb = has_post_thumbnail($post->ID);
-    if (!$already_has_thumb)  {
-        $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
-        if ($attached_image) {
-            foreach ($attached_image as $attachment_id => $attachment) {
-                set_post_thumbnail($post->ID, $attachment_id);
-            }
-        }
-    }
-}
-add_action('the_post', 'raw_child_autoset_featured');
-add_action('save_post', 'raw_child_autoset_featured');
-add_action('draft_to_publish', 'raw_child_autoset_featured');
-add_action('new_to_publish', 'raw_child_autoset_featured');
-add_action('pending_to_publish', 'raw_child_autoset_featured');
-add_action('future_to_publish', 'raw_child_autoset_featured');
+// function raw_child_autoset_featured() {
+//     global $post;
+//     $already_has_thumb = has_post_thumbnail($post->ID);
+//     if (!$already_has_thumb)  {
+//         $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
+//         if ($attached_image) {
+//             foreach ($attached_image as $attachment_id => $attachment) {
+//                 set_post_thumbnail($post->ID, $attachment_id);
+//             }
+//         }
+//     }
+// }
+// add_action('the_post', 'raw_child_autoset_featured');
+// add_action('save_post', 'raw_child_autoset_featured');
+// add_action('draft_to_publish', 'raw_child_autoset_featured');
+// add_action('new_to_publish', 'raw_child_autoset_featured');
+// add_action('pending_to_publish', 'raw_child_autoset_featured');
+// add_action('future_to_publish', 'raw_child_autoset_featured');
