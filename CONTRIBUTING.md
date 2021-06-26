@@ -1,6 +1,6 @@
 # Contributing
 
-Raw Child is a starter child theme for people making websites with the [Genesis Framework](https://my.rawsta.com/themes/genesis/) for WordPress. Thank you for your interest in contributing!
+Raw Child is a starter child theme for people making websites with the [Genesis Framework](https://my.studiopress.com/themes/genesis/) for WordPress. Thank you for your interest in contributing!
 
 ## File issues
 
