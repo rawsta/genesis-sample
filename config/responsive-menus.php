@@ -13,8 +13,16 @@
  */
 return [
 	'script' => [
+		'mainMenu'          => __( 'Menu', 'raw-child' ),
+		'menuIconClass'     => 'dashicons-before dashicons-menu',
+		'subMenu'           => __( 'Submenu', 'raw-child' ),
+		'subMenuIconsClass' => 'dashicons-before dashicons-arrow-down-alt2',
 		'menuClasses' => [
-			'others' => [ '.nav-primary' ],
+			'combine' => [
+				'.nav-primary',
+				'.nav-header',
+			],
+			'others' => [],
 		],
 	],
 	'extras' => [
