@@ -8,11 +8,11 @@
  *  @link    https://github.com/rawsta/raw-child/
  */
 
-add_action( 'wp_footer', 'header_sticky_script' );
+add_action( 'wp_footer', 'raw_child_header_sticky_script' );
 /**
  * Hide Header on Scroll Down but Show when Scroll Up
  */
-function header_sticky_script() {   ?>
+function raw_child_header_sticky_script() {   ?>
 	<script>
 		var didScroll;
 		var lastScrollTop = 0;
@@ -30,7 +30,7 @@ function header_sticky_script() {   ?>
 
 		setInterval(function() {
 			if (didScroll) {
-				ghasScrolled();
+				hasScrolled();
 				didScroll = false;
 			}
 		}, 250);
