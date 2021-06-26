@@ -3,6 +3,10 @@
 GitHub project link: https://github.com/rawsta/raw-child/.
 forked from https://github.com/studiopress/genesis-sample
 
+heavily inspired by:
+- [Bill Erickson's EA-Genesis-Child](https://github.com/billerickson/EA-Genesis-Child)
+- [seothemes' genesis-starter-theme](https://github.com/seothemes/genesis-starter-theme)
+
 This is mainly my own Starter-theme for Genesis-based Websites but everyone is welcome to use it. It doesn't stray to far away from the original genesis-sample and is more a compilation of the usual tweaks and setup steps i tend to use on new projects.
 
 Feedback always appreciated.
