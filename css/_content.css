@@ -163,7 +163,7 @@ p.entry-meta {
 
 @media only screen and (min-width: 960px) {
 
-    /* Content
+	/* Content
 	--------------------------------------------- */
 
 	.content {
@@ -179,9 +179,9 @@ p.entry-meta {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
-    }
+	}
 
-    /* Entry Misc.
+	/* Entry Misc.
 	--------------------------------------------- */
 
 	.after-entry,
@@ -191,9 +191,9 @@ p.entry-meta {
 	.entry-comments,
 	.entry-pings {
 		margin-bottom: 60px;
-    }
+	}
 
-    /* Author Box
+	/* Author Box
 	--------------------------------------------- */
 
 	.author-box {

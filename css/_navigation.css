@@ -180,8 +180,8 @@
 }
 
 .nav-secondary .genesis-nav-menu {
-    /* line-height: 1.5; */
-    line-height: var(--lineHeight);
+	/* line-height: 1.5; */
+	line-height: var(--lineHeight);
 }
 
 .nav-secondary .menu-item {
@@ -196,7 +196,7 @@
 
 @media only screen and (min-width: 960px) {
 
-    /* Genesis Menu
+	/* Genesis Menu
 	--------------------------------------------- */
 
 	.genesis-nav-menu .menu-item {

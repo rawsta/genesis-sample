@@ -32,12 +32,12 @@
 ---------------------------------------------------------------------------- */
 
 :root {
-    --theme-white: #fff;
-    --theme-bg-text: #2f4858;
-    --theme-primary: #ff8300;
-    --theme-secondary: #830000;
-    --theme-orange: #f57c00;
-    --theme-lightgreen: #64dd17;
+	--theme-white: #fff;
+	--theme-bg-text: #2f4858;
+	--theme-primary: #ff8300;
+	--theme-secondary: #830000;
+	--theme-orange: #f57c00;
+	--theme-lightgreen: #64dd17;
 	--theme-lightblue: #86bbd8;
 
 	--fontSize: calc(12px + 0.698vw); /* The character count on */
@@ -45,9 +45,9 @@
 	--letterSpacing: calc(var(--fontSize) * 0.0015);
 	--fontWeight: 300;
 
-    --main-font: "Inter", sans-serif;
+	--main-font: "Inter", sans-serif;
 	--main-font-size: calc(var(--fontSize) * 1);
-    --sub-font-size: calc(var(--fontSize) * 0.75);
+	--sub-font-size: calc(var(--fontSize) * 0.75);
 	--small-font-size: calc(var(--fontSize) * 0.7);
 	--tiny-font-size: calc(var(--fontSize) * 0.6);
 }
